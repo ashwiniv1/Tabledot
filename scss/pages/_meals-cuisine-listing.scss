@@ -1,0 +1,44 @@
+/*meals-cuisine-listing*/
+.meals-cuisine-listing { padding: 60px 0;
+    .popular-meals-box { @include shadowarea(0 0 7px rgba($black, .06)); border: solid 8px $white; } // margin-bottom: 20px; }
+}
+.meals-cuisine-listing-filter { 
+    @include sm { padding: 0 20px; }
+    .filter-text { border-bottom: 1px solid rgba($black, 0.10); padding: 20px 0; display: inline-block; width: 100%;
+        .filter-name { font-size: $font-size + 4; font-weight: bold; text-transform: uppercase; color: $dark-blue; }
+        .filter-clear { font-size: $font-size + (-1); text-transform: uppercase; text-decoration: underline; color: #7f7f7f; }
+    }
+    .meal-cat-name { font-size: $font-size + 1; font-weight: bold; text-transform: uppercase; color: $dark-blue; line-height: 30px; }
+    .form-check { .form-check-label { margin: 5px 0;
+            input { &:checked+span { background: $green; }
+            }
+        }
+    }
+    .meals-cuisine-listing-category { padding: 20px 0 50px;
+        @include lg { padding-bottom: 30px; }
+        .form-check-label {
+            @include lg { font-size: $font-size; }
+            .checkbox-left { 
+                @include lg { height: auto; }
+            }
+        }
+    }
+    .meals-cuisine-listing-price { margin-bottom: 30px; }
+    .meal-range-box { display: inline-block; width: 100%; padding-bottom: 20px;
+        .sliderValue { text-align: center; float: left; width: 45%; @include fontstyle($font-size + 2, $font-weight + 400, $dark-blue, uppercase, 10px 0, 0);
+            + .sliderValue { margin-left: 30px;
+            @include lg { margin-left: 15px; } }
+            @include xl { width: 44%; }
+            @include lg { font-size: $font-size; }
+        }
+    }
+    #slider-range { .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active { @include radius(50%); border: 3px solid $orange; background: $white; outline: none; }
+        .ui-widget-header { background-color: $orange; outline: none; }
+    }
+    .ui-slider .ui-slider-handle { width: 1.5em; height: 1.5em; }
+    .ui-widget.ui-widget-content { background-color: #d9d9d9; border: none; }
+    .ui-slider-horizontal .ui-slider-handle { top: -0.7em; }
+    .ui-slider-horizontal { height: 3px; }
+}
+
+/*#meals-cuisine-listing*/

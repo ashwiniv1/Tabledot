@@ -1,0 +1,116 @@
+/*variables*/
+/*variables*/
+/* Using SCSS variables to store breakpoints */
+/*phone*/
+/*// Medium devices*/
+/*// desktop devices*/
+/*// large devices*/
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1330px;
+    width: 100%; } }
+
+.text-danger {
+  color: #fe1402;
+  font-style: italic;
+  font-size: 15px; }
+
+.error-text {
+  font-size: 15px;
+  display: inline-block;
+  margin-top: 5px;
+  color: #fe1402;
+  font-style: italic; }
+  @media (max-width: 991px) {
+    .error-text {
+      font-size: 12px; } }
+  @media (max-width: 767px) {
+    .error-text {
+      font-size: 10px; } }
+
+.center-content {
+  margin: 0 auto;
+  float: none; }
+
+.pb-30 {
+  padding-bottom: 30px; }
+  @media (max-width: 991px) {
+    .pb-30 {
+      padding-bottom: 14px; } }
+
+.main-title {
+  margin-bottom: 40px; }
+  .main-title h3 {
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #11262e;
+    margin-bottom: 12px; }
+    @media (max-width: 991px) {
+      .main-title h3 {
+        font-size: 25px; } }
+  .main-title p {
+    font-size: 16px;
+    color: #adadad;
+    letter-spacing: 1px; }
+
+/*icon*/
+.veg-icon1 {
+  position: absolute;
+  top: 10px;
+  bottom: auto;
+  left: auto;
+  right: 10px;
+  border: solid 1px #00923f;
+  border-radius: 0;
+  width: 19px;
+  height: 19px;
+  line-height: 18px;
+  background: #ffffff; }
+  .veg-icon1 i {
+    color: #00923f; }
+
+.nonveg-icon1 {
+  position: absolute;
+  top: 10px;
+  bottom: auto;
+  left: auto;
+  right: 10px;
+  border: solid 1px #cd2c2c;
+  border-radius: 0;
+  width: 19px;
+  height: 19px;
+  line-height: 18px;
+  background: #ffffff; }
+  .nonveg-icon1 i {
+    color: #cd2c2c; }
+
+.veg-icon {
+  margin-left: 5px;
+  border: solid 1px #1e824c;
+  border-radius: 0;
+  width: 19px;
+  height: 19px;
+  line-height: 18px;
+  display: inline-block;
+  text-align: center;
+  background: #ffffff; }
+  .veg-icon i {
+    color: #00923f; }
+
+.nonveg-icon {
+  margin-left: 5px;
+  border: solid 1px #cd2c2c;
+  border-radius: 0;
+  width: 19px;
+  height: 19px;
+  line-height: 18px;
+  display: inline-block;
+  text-align: center;
+  background: #ffffff; }
+  .nonveg-icon i {
+    color: #cd2c2c; }
+
+/*#icon*/
+
+/*# sourceMappingURL=extend.css.map */

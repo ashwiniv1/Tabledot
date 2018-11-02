@@ -1,0 +1,40 @@
+@import "variables";
+@import "mixin";
+@import "breakpoint";
+//container
+.container { @media (min-width:1400px) {
+    max-width: 1330px; width: 100%; }
+}
+.text-danger { color: $danger; font-style: italic; font-size: $font-size + 1; }
+.error-text { font-size: $font-size + 1; display: inline-block; margin-top: 5px; color: $danger; font-style: italic;
+    @include md { font-size: $font-size + (-2); }
+    @include sm { font-size: $font-size + (-4); }
+}
+//center
+.center-content { margin: 0 auto; float: none; }
+.pb-30 { padding-bottom: 30px;
+    @include md { padding-bottom: 14px; }
+}
+//Title of page
+.main-title { margin-bottom: 40px;
+    h3 { font-size: $font-size + 16; font-weight: $font-weight + 300; text-transform: uppercase; color: $dark-blue; margin-bottom: 12px;
+    	@include md { font-size: $font-size + 11; }
+    }
+    p { font-size: $font-size + 2; color: lighten($black, 68%); letter-spacing: 1px; }
+}
+
+/*icon*/
+.veg-icon1 { @include positionarea(absolute, 10px, auto, auto, 10px); @include border(solid, 1px, #00923f, 0); @include width($font-size + 5, $font-size + 5); line-height: $font-size + 4; background: $white;
+    i { color: #00923f; }
+}
+.nonveg-icon1 { @include positionarea(absolute, 10px, auto, auto, 10px); @include border(solid, 1px, #cd2c2c, 0); @include width($font-size + 5, $font-size + 5); line-height: $font-size + 4; background: $white;
+    i { color: #cd2c2c; }
+}
+.veg-icon { margin-left: 5px; @include border(solid, 1px, $green, 0); @include width($font-size + 5, $font-size + 5); line-height: $font-size + 4; display: $display-inline; text-align: $text-center; background: $white; 
+    i { color: #00923f; }
+}
+.nonveg-icon { margin-left: 5px; @include border(solid, 1px, #cd2c2c, 0); @include width($font-size + 5, $font-size + 5); line-height: $font-size + 4; display: $display-inline; text-align: $text-center; background: $white;
+    i { color: #cd2c2c; }
+}
+
+/*#icon*/

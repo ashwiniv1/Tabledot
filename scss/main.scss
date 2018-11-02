@@ -1,0 +1,48 @@
+/*import files*/
+@import "utils/mixin";
+@import "utils/variables";
+@import "utils/extend";
+@import 'utils/breakpoint';
+
+@import "../scss/vendor/icons-list.css";
+@import "../scss/vendor/animate.css";
+@import "../scss/vendor/owl.carousel.css";
+@import "../scss/vendor/select2.css";
+@import "../scss/vendor/upload-file.css";
+
+@import 'partial/reset';
+@import 'partial/popup';
+@import 'partial/login';
+@import 'partial/signup';
+@import 'partial/form';
+@import 'partial/select-dropdown';
+@import 'partial/header';
+@import 'partial/footer';
+@import 'partial/slider';
+@import 'partial/tab';
+@import 'partial/button';
+@import 'partial/rating';
+
+/*customer*/
+@import 'pages/customer-home';
+@import 'pages/meals-cuisine-listing';
+@import 'pages/chef-details';
+@import 'pages/chef-google-view';
+@import 'pages/chef-detail-view';
+@import 'pages/customer-order-details';
+@import 'pages/customer-my-account';
+@import 'pages/customer-my-order';
+@import 'pages/checkout';
+@import 'pages/invoice';
+@import 'pages/faq';
+@import 'pages/inner';
+@import 'pages/notification';
+
+/*chef*/
+@import 'pages/chef-home';
+@import 'pages/customer-detail';
+@import 'pages/chef-my-account';
+@import 'pages/chef-my-order';
+// @import 'pages/chef-order-detail';
+@import 'pages/chef-add-meal-side-dish';
+@import 'pages/meal-side-dish-list';

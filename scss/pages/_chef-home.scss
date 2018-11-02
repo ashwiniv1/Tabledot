@@ -1,0 +1,70 @@
+/*section upcoming start*/
+.upcoming_section { @include space(50px 0 70px 0, 0); background: transparent url(../images/upcoming-bg.jpg) no-repeat; background-size: cover;
+    @include sm { background-size: 100%; }
+    h2 { @include fontstyle($font-size + 16, $font-weight + 300, $dark-blue, uppercase, 0, 0); line-height: $font-size + 36; }
+    p { @include fontstyle($font-size +2, normal, lighten($black, 68%), none, 0, 0); color: #adadad; line-height: $font-size + 6; }
+    .filter-upcoming { @include space(0, 50px 0);
+        .form-select { @include space(25px 0 0 0, 0);
+            @include xl { @include space(0, 15px 0 0 0); }
+            @include sm { @include space(25px 0, 0); }
+            label { @include fontstyle($font-size + 5, normal, $dark-blue, capitalize, 0 10px 0 0, 0); }
+            .form-control { @include fontstyle($font-size + 5, normal, $dark-blue, capitalize, 6px 15px, 0); @include radius(0px); @include width(50%, 40px); background: lighten($black, 96%); border-color: lighten($black, 96%); }
+            select { @include appearance; }
+            .select2-container--default { width: auto; text-align: left; }
+            .select2-container--default { .select2-selection--single { background-color: lighten($black, 96%); border: 1px solid lighten($black, 96%); @include radius(0px); height: 38px; line-height: 38px; }
+                .select2-selection__rendered { color: $dark-blue; line-height: 38px; }
+            }
+        }
+    }
+    .upcoming-orderlist { @media (max-width:460px) {
+            .orderlist-box { width: 100%; }
+        }
+    }
+    .popular-meal-box { @include shadowarea(0 0 18px rgba($black, .16)); border: solid 11px $white; background: $white; margin-bottom: 60px; position: relative;
+        .popular-meals-media { max-width: 100%; position: relative; height: 210px;
+            @include lg { height: 180px; }
+            @include md { height: 130px; }
+            @include sm { height: 100%; }
+            img { width: 100%; height: 100%; object-fit: cover; position: relative; }
+        }
+        .popular-meals-content { position: relative;
+            .border-bottom { border-bottom: 1px solid #ebebeb; @include space(15px 15px, 0); color: $dark-blue;
+                @include md { padding: 10px 5px; }
+                .user-name { line-height: $font-size + 7; @include fontstyle($font-size +2, $font-weight + 300, $dark-blue, uppercase, 0, 0);
+                    @include md { font-size: $font-size; } 
+                }
+            }
+            .user-loc-box { @include fontstyle($font-size +2, normal, $dark-blue, none, 0, 0);
+                @include xl { @include space(0, 0 0 10px 0); display: $display; font-size: $font-size; }
+                @include md { margin:0; }
+                @include sm { float: none !important; display: $display; }
+                i { color: #9e9e9e; font-size: $font-size +5; margin-right: 7px;
+                    @include xl { margin-right: 2px; }
+                    @include md { font-size: $font-size; }
+                }
+            }
+            .user-loc { @extend .user-loc-box; text-align: right; }
+            .user-serving { @extend .user-loc-box; float: left;
+                @include md { float: none; }
+            }
+            .user-date { @extend .user-loc-box; float: right;
+                @include md { float: none; }
+            }
+            small { line-height: $font-size + 7; @include fontstyle($font-size + 2, normal, #9e9e9e, none, 0, 0 0 10px 0); display: $display;
+                @include md { font-size: $font-size + (-1); }
+            }
+            .serving { @include space(0, 15px 0); }
+            h4 { @include fontstyle($font-size +5, $font-weight + 300, $orange, uppercase, 0, 0); 
+                @include md { font-size: $font-size + 2; }
+            }
+            .btn-success { padding: 10px 30px; }
+            .btn-view { @include space(10px 30px, 0 0 -40px 0);
+                @include md { padding: 8px 18px; }
+                /*@include transition(all, 1s,linear);*/
+                &:focus, &:hover { outline: none; border-color: $dark-blue; }
+            }
+        }
+    }
+}
+
+/*section upcoming end*/

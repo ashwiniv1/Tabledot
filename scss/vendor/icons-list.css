@@ -1,0 +1,184 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../../fonts/icomoon.eot?nexu0u');
+  src:  url('../../fonts/icomoon.eot?nexu0u#iefix') format('embedded-opentype'),
+    url('../../fonts/icomoon.ttf?nexu0u') format('truetype'),
+    url('../../fonts/icomoon.woff?nexu0u') format('woff'),
+    url('../../fonts/icomoon.svg?nexu0u#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-upload:before {
+  content: "\e934";
+}
+.icon-chat:before {
+  content: "\e933";
+}
+.icon-check:before {
+  content: "\e92f";
+}
+.icon-message:before {
+  content: "\e930";
+}
+.icon-cross:before {
+  content: "\e931";
+}
+.icon-payment2:before {
+  content: "\e932";
+}
+.icon-error:before {
+  content: "\e92d";
+}
+.icon-verified:before {
+  content: "\e92e";
+}
+.icon-download:before {
+  content: "\e92c";
+}
+.icon-camera:before {
+  content: "\e92b";
+}
+.icon-meal:before {
+  content: "\e928";
+}
+.icon-price:before {
+  content: "\e929";
+}
+.icon-customers:before {
+  content: "\e92a";
+}
+.icon-receipt:before {
+  content: "\e926";
+}
+.icon-confirmation:before {
+  content: "\e927";
+}
+.icon-breakfast:before {
+  content: "\e922";
+}
+.icon-dinner:before {
+  content: "\e923";
+}
+.icon-all:before {
+  content: "\e924";
+}
+.icon-lunch:before {
+  content: "\e925";
+}
+.icon-print:before {
+  content: "\e920";
+}
+.icon-calendar:before {
+  content: "\e921";
+}
+.icon-thumb-up:before {
+  content: "\e91d";
+}
+.icon-thumb-down:before {
+  content: "\e91f";
+}
+.icon-loading:before {
+  content: "\e91e";
+}
+.icon-calendar-check:before {
+  content: "\e91a";
+}
+.icon-map-marker:before {
+  content: "\e91b";
+}
+.icon-users:before {
+  content: "\e91c";
+}
+.icon-minus:before {
+  content: "\e918";
+}
+.icon-plus:before {
+  content: "\e919";
+}
+.icon-order:before {
+  content: "\e917";
+}
+.icon-password:before {
+  content: "\e915";
+}
+.icon-payment1:before {
+  content: "\e916";
+}
+.icon-about:before {
+  content: "\e911";
+}
+.icon-certification:before {
+  content: "\e912";
+}
+.icon-meal-expertise:before {
+  content: "\e913";
+}
+.icon-review:before {
+  content: "\e914";
+}
+.icon-customer:before {
+  content: "\e90f";
+}
+.icon-cap:before {
+  content: "\e910";
+}
+.icon-close:before {
+  content: "\e90e";
+}
+.icon-location:before {
+  content: "\e90d";
+}
+.icon-right-arrow:before {
+  content: "\e90b";
+}
+.icon-left-arrow:before {
+  content: "\e90c";
+}
+.icon-chef:before {
+  content: "\e908";
+}
+.icon-cuisine:before {
+  content: "\e909";
+}
+.icon-payment:before {
+  content: "\e90a";
+}
+.icon-logout:before {
+  content: "\e905";
+}
+.icon-pending:before {
+  content: "\e903";
+}
+.icon-checked:before {
+  content: "\e902";
+}
+.icon-bank-detail:before {
+  content: "\e900";
+}
+.icon-basic-info:before {
+  content: "\e901";
+}
+.icon-legal-doc:before {
+  content: "\e904";
+}
+.icon-training-video:before {
+  content: "\e906";
+}
+.icon-verification:before {
+  content: "\e907";
+}

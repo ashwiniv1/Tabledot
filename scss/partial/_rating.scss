@@ -1,0 +1,44 @@
+//ratings
+
+.rating { border: none; display: inline-block;
+
+    /*float: left;*/
+    >input { display: none; }
+    >label { color: #ddd; float: right; margin-bottom: 0;
+        &:before { margin: 5px; font-size: $font-size; font-family: FontAwesome; display: inline-block; content: "\f005"; }
+    }
+    >.half:before { content: "\f089"; position: absolute; }
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { /*color: #FFD700;*/ }
+
+/* hover previous stars in list */
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover, .rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { /*color: #FFED85;*/ }
+
+
+/*rate-chef page*/
+
+.rating1 { border: none; display: inline-block;
+
+    /*float: left;*/
+    >input { display: none; }
+    >label { color: #ddd; float: right; margin-bottom: 0;
+        &:before { margin: 5px; font-size: $font-size; font-family: FontAwesome; display: inline-block; content: "\f005"; }
+    }
+    >.half:before { content: "\f089"; position: absolute; }
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+.rating1 > input:checked ~ label, /* show gold star when clicked */
+.rating1:not(:checked) > label:hover, /* hover current star */
+.rating1:not(:checked) > label:hover ~ label { color: #FFD700; }
+
+/* hover previous stars in list */
+.rating1 > input:checked + label:hover, /* hover current star when changing rating1 */
+.rating1 > input:checked ~ label:hover, .rating1 > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating1 > input:checked ~ label:hover ~ label { color: #FFED85; }

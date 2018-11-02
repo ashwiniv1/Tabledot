@@ -1,0 +1,99 @@
+/*chef-detail*/
+.chef_details { padding: 50px 0px;
+	.border-line { border-left: 1px solid lighten($black, 90%); }
+	.chef_profile { 
+		.chef-profile-media { @include width ( 370px, 370px );   margin-bottom: 40px;
+			@include lg { height: 100%; width: auto; }
+			// @include md { height: 220px; }
+			// @include sm { height: auto; }
+		 }
+		img { display: block; margin-bottom: 35px; border: solid 13px rgba($black,.01); @include width (100%, 100%); object-fit: cover; @include shadowarea(0 0 24px rgba($black,.13)); }
+		h3 { font-size: $font-size + 16; font-weight: $font-weight + 300; text-transform: uppercase; color: $dark-blue; margin-bottom: 12px; @include md { font-size: $font-size + 11; } }
+		h4 { font-size: 14px; color: $dark-blue; margin: 0px 0px 10px 0px;
+			span { display: inline-block; font-weight: bold; }
+		}
+		p { font-size: 13px; color: #8a8a8a; font-style: italic; width: 90%; }
+	}
+	.chef_expertise {
+		@include sm { margin-top: 40px; }
+		@extend .tab-section; 
+			.panel-heading { 
+				.nav-tabs { 
+					li { 
+						a { padding: 12px 30px;
+							span { @include lg { font-size: $font-size + 14; margin-right: 5px; } }
+							@include xl { padding: 12px 20px; font-size: $font-size + (-1); }
+							@include lg { padding: 12px 13px; }
+						}
+					}
+				}
+			}
+		// .expertise_nav { margin-bottom: 35px;
+		// 	ul { padding: 0px; margin: 0px 0px 20px 0px; border-bottom: 1px solid lighten($black, 90%); width: 100%; float: left;
+		// 		li { float: left; width: 25%; text-align: center; position: relative;
+		// 			@include md { width: 50%; }
+		// 			@include sm { width: 100%; }
+		// 			&:hover, &.active { @include gredient; border-color: $orange; color: $white;
+		// 				a, span { color: $white; }
+		// 			}
+		// 			span { display: inline-block; vertical-align: middle; font-size: 50px; color: $green; padding-right: 10px;
+		// 				@include lg { font-size: 30px; }
+		// 				@include md { font-size: 50px; }
+		// 			}
+		// 			a { font-size: $font-size; color: $dark-blue; padding: 10px 0px; display: block; font-weight: bold; text-transform: uppercase; background: transparent;
+		// 				@include lg { font-size: 12px; }
+		// 				@include md { font-size: 14px; }
+		// 				&:hover { color: $white; }
+		// 			}
+		// 		}
+		// 	}
+		// }
+		.chef_experties_con_box { margin-bottom: 90px;
+			.chef_recipe_sec { margin-bottom: 35px;
+				.chef-meal-media { @include width ( 340px, 220px );
+					@include lg { height: 100%; width: auto; }
+				img { display: block; margin-bottom: 20px; @include width (100%, 100%); object-fit: cover; }}
+				.reciep_btns { background: lighten($black, 97%); padding: 10px 25px;
+					@include lg { margin-bottom: 20px; }
+					h5 { font-size: 15px; color: $dark-blue; display: inline-block; font-weight: bold; text-transform: uppercase; }
+					ul { margin-left: 0px;
+						li { @include fontstyle($font-size, normal, lighten($black, 42%), capitalize, 3px 12px, 4px 2px); line-height: $font-size + 8; background: #f2f2f2; @include radius(20px); background: transparent; border: 1px solid lighten($black, 42%); }
+					}
+					/* .rcp_btn { @include radius(20px); padding: 5px 15px; font-size: 14px; color: lighten($black, 42%); display: inline-block; border: 1px solid lighten($black, 42%); background: transparent; margin-left: 15px; }*/
+				}
+				.recipe-rating-sec { padding-bottom: 15px; border-bottom: 1px solid lighten($black, 90%); margin-bottom: 20px;
+					h4 { font-size: 15px; color: $dark-blue; display: block; font-weight: 600; text-transform: uppercase; margin: 0px 0px 5px 0px; }
+					span { font-size: 15px; color: #858585; display: block; font-style: italic; }
+					.recipe-rating-div { text-align: right; position: relative;
+						.review-link { font-size: 13px; color: $dark-blue; display: inline-block; position: absolute; top: 6px; left: 0;
+							@include xl { position: relative; }
+						}
+					}
+				}
+				.recipe-cont-div { h5 { font-size: 15px; color: lighten($black, 57%); display: block; font-weight: bold; margin: 0px 0px 5px 0px; }
+					p { font-size: 15px; color: lighten($black, 57%); margin: 0px 0px 20px 0px; }
+				}
+			}
+			.chef_booking_sec { background: #fffbf8; padding: 30px 25px 10px; position: relative;
+				@include md { padding: 30px 25px 30px; }
+				.chef_booking_sec_inner { padding-right: 0px;
+					label { font-size: 14px; color: $dark-blue; font-weight: bold; }
+					select, input { border: none; border-bottom: 1px solid #e5e1df; background: transparent; @include radius(0px); @include shadowarea(none); padding: 6px 10px; }
+					.input-group-addon { border: none; border-bottom: 1px solid #e5e1df; background: transparent; @include radius(0px); }
+				}
+				ul { margin: 0px 0px 0px 0px; padding: 0px 0px 0px 0px; display: block;
+					li { font-size: 14px; color: $dark-blue; display: inline-block; padding: 0px 10px; border-right: 1px solid $dark-blue;
+						span { display: inline-block; }
+					}
+					li:last-child { border-right: none; }
+					li:first-child { padding-left: 0px; }
+				}
+				a { position: absolute; right: 15px; bottom: -40px; }
+			}
+		}
+	}
+	.chef_about_cont { h4 { font-size: 15px; color: $dark-blue; display: inline-block; font-weight: bold; text-transform: uppercase; margin: 0px 0px 25px 0px; }
+		p { font-size: 15px; color: lighten($black, 57%); margin: 0px 0px 15px 0px; }
+		.about_review { font-size: 13px; color: $dark-blue; display: inline-block; font-weight: 500; border: 1px solid $dark-blue; @include radius(14px); padding: 5px 15px; margin-top: 10px; }
+	}
+}

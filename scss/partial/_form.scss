@@ -1,0 +1,54 @@
+.register-form { margin-top: 50px; //display: inline-block; // width: 100%;
+    @include md { margin-top: 30px; }
+    label { color: lighten($black, 68%); font-weight: $font-weight + 100; font-size: $font-size + 2; position: absolute; pointer-events: none; left: 5px; top: 5px; @include transition(all, 0.2s, ease);
+        @include md { font-size: $font-size; }
+    }
+    .signup-link { font-size: $font-size; font-weight: $font-weight + 300; text-transform: uppercase; color: lighten($black, 68%); letter-spacing: 1px;
+        @include md { font-size: $font-size + (-2); }
+        @include md { font-size: $font-size + (-4); }
+        a { color: #494f51; text-decoration: underline;
+            &:hover { color: $orange; }
+        }
+    }
+}
+.register-label { position: relative; }
+.register-textarea { .parsley-errors-list { position: relative; bottom: 0; }
+}
+.register-input, .register-select { color: $dark-blue; font-size: $font-size + 4; border: none; @include shadowarea(none); @include radius(0px); padding: 4px 4px; display: block; width: 100%; height: 43px; background-color: transparent; border: none; border-bottom: 1px solid rgba($dark-blue, 0.1);
+    @include md { font-size: $font-size; }
+    @include input-placeholder { color: $dark-blue; font-size: $font-size + 4; font-weight: $font-weight + 100;
+        @include md { font-size: $font-size; }
+        @include sm { font-size: $font-size + (-2); }
+    }
+}
+.register-input:focus, .register-select:focus { outline: none; border-bottom: 2px solid $orange !important; @include shadowarea(none); }
+.register-input, .tagsinput.focus { &:focus~label, &:not(:placeholder-shown)~label { top: -22px; color: $orange; @include shadowarea(none); }
+}
+.register-select { &:focus~label, &:not([value=""]):valid~label { top: -22px; color: $orange; @include shadowarea(none); }
+}
+.register-textarea { overflow: hidden; overflow-x: hidden; }
+.form-check { position: relative;
+    .form-check-label { color: lighten($black, 48%); font-size: $font-size + 2; display: inline-block; font-weight: $font-weight + 100; position: relative; cursor: pointer; pointer-events: initial;
+        @include md { font-size: $font-size; }
+        @include sm { font-size: $font-size + (-2); }
+        input { visibility: hidden; position: absolute;
+            &:checked+span { @include shadowarea(inset 0 0 0 3px $white); background: $orange;
+                @include sm { @include shadowarea(inset 0 0 0 2px $white); }
+            }
+        }
+        span { display: inline-block; vertical-align: middle; width: 18px; height: 18px; transition: 0.2s; @include shadowarea(inset 0 0 0 8px $white); border: 1px solid #ededed; margin-right: 10px;
+            @include sm { width: 13px; height: 13px; }
+        }
+    }
+}
+.parsley-errors-list { position: relative; bottom: 0; }
+.reg-select .parsley-errors-list { position: absolute; }
+.form-check-label .parsley-errors-list { position: absolute; bottom: -20px; left: 30px; }
+
+.date-sec {
+    .input-group { color: $dark-blue;
+        .input-group-addon { background: transparent; @include radius(0); border: 0; border-bottom: 1px solid #ddd;
+            i { font-size: $font-size + 3; }
+        }
+    }
+}

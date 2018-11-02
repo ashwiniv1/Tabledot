@@ -1,0 +1,132 @@
+/*common login*/
+.login-wrapper { background: url("../images/login-bg.png") no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
+.loginlogo { padding: 30px 0;
+    @include md { padding: 15px 0; }
+    img { margin: 0 auto; }
+}
+.left-block { background-color: $white; @include shadowarea(0px 0px 51px 0px rgba($black, 0.11)); padding: 50px; padding-right: 65px; position: relative;
+    @include xl { padding-right: 60px; }
+    @include lg { padding-right: 50px; }
+    @include md { padding-right: 40px; padding: 35px; }
+    @include sm { padding: 25px; }
+    .login-title { padding: 18px 0 50px;
+        @include md { padding: 0 0 20px; }
+        @include sm { padding-bottom: 15px; }
+        h2 { @include fontstyle($font-size + 38, $font-weight + 400, lighten($black, 68%), uppercase,0,0); 
+            span { color: $dark-blue; }
+            @include xl { font-size: $font-size + 31; }
+            @include lg { font-size: $font-size + 22; }
+            @include md { font-size: $font-size + 14; }
+            @include sm { font-size: $font-size + 11; }
+        }
+        p { @include fontstyle($font-size + 12, $font-weight + 100, $orange, normal, 0, 0); line-height: $line-height + 15;
+            @include lg { font-size: $font-size + 6; }
+            @include md { font-size: $font-size + 2; line-height: 30px; }
+            @include sm { font-size: $font-size; }
+        }
+    }
+    .login-forgot { @include fontstyle($font-size + 2, $font-weight + 100, lighten($black, 48%), normal, 0, 10px 0); float: right; display: inline-block;
+        @include md { font-size: $font-size; }
+        @include sm { font-size: $font-size + (-2); }
+        a { color: lighten($black, 48%);
+            &:hover { color: $orange; }
+        }
+    }
+    .login-social { display: inline-block; width: 100%;
+        ul { 
+            li { 
+                .btn { color: $white; width: 100%; @include radius(30px); font-size: $font-size + 14; padding-right: 12px;
+                    @include xl { font-size: $font-size + 6; }
+                    @include md { @include width (40px, 40px); padding: 8px 0; font-size: $font-size + 2; }
+                    @include sm {@include width (30px, 30px); padding: 5px 0; font-size: $font-size; }
+                    span { font-weight: $font-weight + 300; font-size: $font-size + 2; display: inline-block; vertical-align: middle; padding: 5px;
+                        @include xl { font-size: $font-size; }
+                        @include md { display: none; }
+                    }
+                }
+                .btn-loginfb { background-color: $blue-btn;
+                    &:hover { opacity: 0.9; }
+                }
+                .btn-logingoogle { background-color: $red-btn;
+                    &:hover { opacity: 0.9; }
+                }
+            }
+        }
+    }
+
+/*@extend .form-section;*/ }
+.right-block { @include shadowarea(-10px 0px 20px 0px rgba($black, 0.2)); background: url("../images/login-img.jpg") no-repeat center center; background-size: cover;
+    @include sm { display: none; }
+}
+.login-footer { background: transparent;
+    @include md { padding: 15px 0; }
+    .copyright { color: lighten($black, 45%);
+        a { color: lighten($black, 45%);
+            &:hover { color: $orange; }
+        }
+    }
+    .footer-nav { ul { li { &:not(:last-child):after { border-color: lighten($black, 45%); }
+                a { color: lighten($black, 45%);
+                    &:hover { color: $orange; }
+                }
+            }
+        }
+    }
+}
+
+/*#common login*/
+#password-sec { .left-block, .right-block { height: 100%; min-height: 693px;
+        @include md { min-height: 550px; }
+        @include sm { min-height: 100%; }
+    }
+}
+
+/*common reset / change password */
+.password-form { @extend .register-form;
+    h3 { @include fontstyle($font-size + 14, $font-weight + 400, $dark-blue, uppercase, 0, 0);padding-bottom: 12px;
+        @include sm { font-size: $font-size + 6; }
+    }
+    p { font-size: $font-size + 2; font-weight: $font-weight + 100; color: lighten($black, 68%); padding-bottom: 60px; letter-spacing: 1px; backface-visibility: hidden;
+        @include sm { font-size: $font-size + (-1); padding-bottom: 40px; }
+    }
+    @include vertical-center { position: absolute; left: 8%; right: 10%;
+        @include sm { position: relative; left: 0; right: 0; }
+    }
+    // @extend .form-section;
+    .btn-primary { padding: 12px 25px; }
+    .resend { font-size: $font-size + 2; font-weight: $font-weight + 100;
+        @include md { font-size: $font-size; }
+        @include sm { font-size: $font-size + (-2); }
+        a { color: lighten($black, 48%);
+            &:hover { color: $orange; }
+        }
+    }
+}
+
+/*#common reset / change password */
+
+/*reset form*/
+
+.reset-form { .form-group { padding-bottom: 0; } }
+
+/*#reset form*/
+
+/*password-changed*/
+
+.password-changed { @include vertical-center { position: absolute; left: 8%; right: 8%;
+        @include sm { position: relative; left: 0; right: 0; }
+    }
+    img { margin: 0 auto;
+        @include lg { width: 100px; }
+        @include md { width: 70px; }
+        @include sm { width: 50px; }
+    }
+    h3, p { font-size: $font-size + 10; font-weight: $font-weight + 400; text-transform: uppercase;
+        @include sm { font-size: $font-size + 8; }
+    }
+    h3 { color: $orange; padding: 35px 0 3px; }
+    p { color: $dark-blue; padding-bottom: 10px; }
+    .btn-login { padding: 12px 34px; }
+}
+
+/*#password-changed*/

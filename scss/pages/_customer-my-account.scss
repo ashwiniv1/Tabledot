@@ -1,0 +1,90 @@
+/**My Account**/
+.my_account_personal_info { padding: 50px 0px;
+	.my_profile_sec { text-align: center;
+		.self_img_sec { width: 100%; position: relative;
+			.self_profile_img { display: inline-block; @include radius(100%); border: 10px solid #f7f7f7; margin-bottom: 20px; }
+			a { position: absolute; bottom: 9%; right: 27%; display: block; width: 50px; height: 50px; background: green; @include radius(50%);
+				.camera_img { display: inline-block; margin-top: 9px; }
+			}
+		}
+		h3 { font-size: 17px; color: $dark-blue; padding: 0px 0px 20px 0px; font-weight: 600; width: 100%; text-align: center; text-transform: uppercase; }
+	}
+	.my_account_cont { @extend .tab-section;  width: 100%; float: left; 
+		.my_account_nav { margin: 0px 0px 40px 0px; display: block; padding: 0px; width: 100%; float: left; border-bottom: 1px solid lighten($black, 90%);
+			li { width: 33.333%; display: inline-block; text-align: center; position: relative; float: left;
+				@include md { width: 50%; }
+				@include sm { width: 100%; }
+				&:hover, &.active { @include gredient; border-color: $orange; color: $white;
+					a, span { color: $white; }
+				}
+				span { display: inline-block; vertical-align: middle; font-size: 35px; color: $green; padding-right: 10px;
+					@include lg { font-size: 30px; }
+					@include md { font-size: 35px; }
+				}
+				a { display: block; padding: 10px 0px; font-size: 14px; color: $dark-blue; font-weight: bold; text-transform: uppercase; background: transparent;
+					@include lg { font-size: 12px; }
+					@include md { font-size: 14px; }
+				}
+			}
+		}
+		.my_account_cont_box { padding: 0px 30px;/*border: 1px solid lighten($black, 90%);*/
+			.form-group { margin-bottom: 40px; }
+			label { width: 100%; font-weight: 500; }
+			input, select { width: 100%; border: none; border-bottom: 1px solid #e5e1df; background: transparent; @include radius(0px); @include shadowarea(none); }
+			.label_row { margin-bottom: 40px; }
+			.label_row label { color: $dark-blue; margin-bottom: 10px; }
+			.btn-update { color: $white; background-color: $green; border-color: $green; margin: 20px auto; padding: 12px 55px; font-size: 16px; }
+			h4 { font-size: 20px; text-transform: uppercase; color: $dark-blue; line-height: 20px; letter-spacing: 1px; font-weight: bold; margin-bottom: 40px; }
+			table { text-align: center; width: 100%;
+				thead { th { font-size: 16px; color: $dark-blue; font-weight: 600; padding: 30px 10px; text-align: center; }
+				}
+				tbody { td { font-size: 16px; color: $dark-blue; padding: 30px 10px; }
+				}
+			}
+			table tr:nth-child(odd) { background: #fafbfb }
+			table thead tr { border-top: 1px solid #e5e1df; background: transparent !important; }
+			table tr { border-bottom: 1px solid #e5e1df; }
+			table td:last-child { color: $green; }
+			.search_module { margin-bottom: 40px;
+				.search_container { @include sm { width: 100%; margin: 0px 0px 15px 0px; float: left; }
+					input { width: 80%; border: none; border-bottom: 1px solid #e5e1df; background: transparent; @include radius(0px); @include shadowarea(none); color: #adadad; font-size: 16px; float: left; padding: 6px 10px; }
+					button { width: 19%; float: right; padding: 6px 10px; background: #eeeeee; font-size: 17px; border: none; cursor: pointer;
+						.fa { color: #69767b; }
+					}
+				}
+				.process_sec { float: right;
+					.print_sec { display: inline-block; margin-right: 30px; }
+					.download_sec { display: inline-block; }
+				}
+			}
+			.payment_bottom_sec { .pagination { float: right; margin-top: 35px;
+					li { a { font-size: 18px; color: $dark-blue; }
+					}
+				}
+			}
+		}
+		.change_payment_box { width: 100%; border: 1px solid lighten($black, 90%); padding: 25px 20px; position: relative; margin-top: 20px;
+			p { font-size: 16px; color: $dark-blue; margin: 0px 0px 8px 0px; font-weight: 600; }
+			a { font-size: 16px; color: $orange; margin: 0px 0px 0px 0px; display: block; font-weight: 600; }
+			.yes_check { display: none; }
+		}
+		.add-payment { color: $dark-blue; background-color: lighten($black, 96%); border-color: lighten($black, 96%); margin: 45px  30px  45px 0px; padding: 12px 55px; font-size: 16px;
+			@include lg { font-size: 12px; padding: 12px 15px; }
+			@include sm { font-size: 14px; padding: 12px 25px; margin: 20px  30px  20px 0px; }
+		}
+		.view-payment { color: $dark-blue; background-color: transparent; border-color: lighten($black, 96%); margin: 45px auto 45px; padding: 12px 55px; font-size: 16px;
+			@include lg { font-size: 12px; padding: 12px 15px; }
+			@include sm { font-size: 14px; padding: 12px 25px; margin: 20px auto 20px; }
+		}
+		.back-btn { color: $dark-blue; background-color: lighten($black, 96%); border-color: lighten($black, 96%); margin: 20px  30px  40px 0px; padding: 12px 55px; font-size: 16px;
+			@include sm { margin: 20px  30px  15px 0px; }
+		}
+		.save-btn { color: $white; background-color: $green; border-color: $green; margin: 20px  30px  40px 0px; padding: 12px 55px; font-size: 16px;
+			@include sm { margin: 20px  30px  15px 0px; }
+		}
+		.active { @include shadowarea(-1px 1px 18px 0px rgba(255, 127, 0, 0.56)); }
+		.active .yes_check { position: absolute; top: -14%; right: -9%; display: block; width: 50px; height: 50px; background: $orange; @include radius(50%);
+			img { display: inline-block; margin-top: 13px; margin-left: 11px; }
+		}
+	}
+}

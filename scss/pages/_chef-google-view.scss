@@ -1,0 +1,70 @@
+/*meals_nearby*/
+.chef_google_sec { padding: 50px 0px;
+    .meal_nearby_cont { .meal_nearby_box { position: relative; padding: 25px; border: 1px solid #d7d7d7; @include radius(5px); margin-bottom: 50px;
+            .meal-profile-media { @include width (150px, 150px); 
+                @include xl { @include width (auto, 100%); }
+                img{ @include width (100%, 100%); object-fit:cover; }
+            }
+            .meal_nearby_box_cont_top { padding-bottom: 10px; border-bottom: 1px solid #d7d7d7; margin-bottom: 15px;
+                h4 { font-size: $font-size + 2; text-transform: uppercase; color: $dark-blue; line-height: 20px; letter-spacing: 1px; font-weight: bold; }
+                p { font-size: $font-size + 2; color: #737373; }
+                span { font-size: $font-size + 16; vertical-align: middle; margin-right: 2px; }
+                .meal_mearby_title { display: flex; justify-content: space-between; align-items: center;
+                    @include md { display: block; }
+                }
+            }
+            .meal_nearby_box_cont_bottom { 
+                img { float: left; @include radius(100%); border: 2px solid #f0f0f0; margin-right: 15px; height: 44px; max-width: 44px; }
+                .shef_detail { float: left;
+                    h5 { width: 100%; font-size: 14px; color: $dark-blue; margin: 0px 0px 5px 0px; }
+                    .chef-hd { font-size: $font-size + 1; text-transform: uppercase; color: $dark-blue; }
+                    span { color: #737373; font-size: 20px; vertical-align: text-bottom; margin-right: 2px; }
+                    p { font-size: $font-size + 2; color: #676869; }
+                }
+            }
+            a { position: absolute; right: 15px; bottom: -40px; }
+        }
+    }
+    .meal_nearby_map { .chef_google_view_map { margin-bottom: 30px; }
+        .meal_select_sec { h4 { font-size: $font-size + 2; text-transform: uppercase; color: $dark-blue; line-height: 20px; letter-spacing: 1px; font-weight: bold; margin-bottom: 20px;
+                a { color: #ff1800; text-transform: lowercase; display: inline-block; margin-left: 15px; }
+            }
+            h5 { width: 100%; font-size: 16px; color: #828282; margin: 0px 0px 5px 0px; font-weight: bold; }
+            span { width: 100%; font-size: 16px; color: #828282; margin: 0px 0px 5px 0px; display: block; font-style: italic; }
+        }
+    }
+}
+.add-side-dish-box { @include shadowarea(0 0 10px rgba($black, .11)); border: solid 11px $white; background: $white; margin: 30px 20px; position: relative;
+    @include xl { margin: 30px 0; }
+    .add-side-dish-media { max-width: 100%; @include width (330px, 165px); position: relative;
+        @include xl { height: 100%; width: auto; }
+        img { @include width ( 100%, 100%); object-fit: cover; position: relative; }
+    }
+    .add-side-dish-content { position: relative; padding: 10px 10px 0;
+        .dish-name { line-height: $font-size + 7; @include fontstyle($font-size + 2, $font-weight + 300, $dark-blue, uppercase, 0, 0); }
+        .user-rating { .rating > label:before { margin: 0 5px; }
+        }
+        .dish-amount { font-size: $font-size + 2; color: $dark-blue; }
+        .btn-success { padding: 10px 30px; }
+        .btn-view { @include space(12px 40px, 0 0 -40px 0);
+            @include md { padding: 8px 40px; }
+            &:focus, &:hover { outline: none; border-color: $dark-blue; }
+        }
+    }
+}
+.map-nearby-chef { @include shadowarea( 0 0 13px rgba($black, .18)); max-width: 200px;
+    .map-nearby-chef-box { display: inline-block; width: 100%; padding: 10px;
+        .map-media { float: left; @include width (45px, 45px);
+            img { @include radius(50%); margin-right: 15px; @include width (100%, 100%);  }
+        }
+        .map-detail { h5 { font-size: $font-size + (-1); font-weight: $font-weight + 400; text-transform: uppercase; color: $dark-blue; line-height: 18px; }
+            p { font-size: $font-size + (-3); text-transform: uppercase; color: $dark-blue; }
+        }
+    }
+    .map-nearby-btngroup { display: flex; justify-content: center; /*position: relative;*/
+        .btn-map { font-size: $font-size + (-2); font-weight: $font-weight + 300; text-transform: uppercase; color: $white; background-color: $dark-blue; @include radius(0px); width: 100%;
+            + .btn-map { border-left: 1px solid rgba(255, 255, 255, 0.30); }
+        }
+        /*&:after { content: ""; border-style: solid; border-width: 10px 10px 0 10px; border-color: $dark-blue transparent transparent; position: absolute; bottom: -8px; }*/
+    }
+}

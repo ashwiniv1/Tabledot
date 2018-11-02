@@ -1,0 +1,99 @@
+.mealside-tab { 
+	.panel { border: 0;
+		.panel-heading { @include space(0, 30px 0);
+			ul { border-top: 1px solid #efefef;
+				li { width: 33.33%;
+					@include sm { width: 100%; }
+				}
+			}
+		}
+		.panel-body { padding: 0;
+			.meal-box { @include space(0, 0 0 30px 0);
+				.meal-media { @include width (100%, 225px); 
+					@include lg { height: 180px; }
+					img { position: relative; border: solid 6px rgba(0,0,0,.05); @include radius (5px); @include width (100%, 100%); object-fit: cover; }
+					.veg-icon { @include positionarea(absolute, 20px, auto, auto, 60px); @include border(solid, 1px, #00923f, 0); text-align: $text-center; @include width($font-size + 5, $font-size + 5); line-height: $font-size + 4; background: $white;
+						i { color: #00923f; }
+					}
+				}
+				.meal-content { small { @include fontstyle($font-size + (-1), normal, #848484, capitalize, 0, 0); line-height: $font-size + 7; }
+					h4 { line-height: $font-size + 7; @include fontstyle($font-size + 2, $font-weight + 300, $dark-blue, uppercase, 0, 15px 0 0 0); }
+					p { @include fontstyle($font-size + (-1), normal, #848484, none, 0, 15px 0); line-height: $font-size + 10; }
+					a { text-decoration: underline; line-height: $font-size + 7; @include fontstyle($font-size, $font-weight + 300, $dark-blue, capitalize, 0, 0);
+						&:hover { color: $orange; }
+					}
+				}
+				.border-meal { @include space(10px 15px, 20px 0); border-bottom: 1px solid lighten($black, 90%); border-bottom: 1px solid lighten($black, 90%); border-top: 1px solid lighten($black, 90%);
+					strong { @include fontstyle($font-size + 2, $font-weight + 300, $dark-blue, uppercase, 0, 0); line-height: $font-size + 26; }
+					ul { margin-left: 0px;
+						li { @include fontstyle($font-size + 2, normal, $dark-blue, capitalize, 3px 12px, 4px 2px); line-height: $font-size + 8; background: #f2f2f2; @include radius(30px); border: 2px solid #dadada; }
+					}
+					.serving-text { text-align: right;
+						@include sm { text-align: left; }
+					}
+				}
+				.resubmit { a { @include fontstyle($font-size, bold, $white, uppercase, 10px 40px, 0); background: $orange; float: right; line-height: $font-size + 10; @include  radius(50px); display: $display-inline; @include transition(all, 1s, linear);
+						&:hover, &:focus { background: $dark-blue; }
+					}
+				}
+			}
+		}
+	}
+	.search-right { .add-meal { a { @include fontstyle($font-size + 2, $font-weight + 300, $white, capitalize,  12px 25px, 0 0 20px 0); background: $green; @include transition(all, 1s, linear); line-height: $font-size + 7; @include radius(50px); display: $display; text-align: $text-center;
+				i { font-size: $font-size + 1; margin-right: 10px; vertical-align: middle; }
+				&:hover { background: $dark-blue; }
+			}
+		}
+		.search-form { border-top: 1px solid lighten($black, 90%); @include space(40px 0 0 0, 40px 0); color: $dark-blue;
+			.search-heading { @include fontstyle($font-size + 7, bold, $dark-blue, uppercase, 0, 0 0 20px 0); }
+			.btn-sub { @include fontstyle($font-size + 2, $font-weight + 300, $dark-blue, uppercase, 10px 30px, 0); line-height: $font-size +7; background: #f3f3f3; @include transition(all, 1s, linear);
+				&:hover, &:focus { outline: none; background: $dark-blue; color: $white; }
+			}
+
+			/*.form-group{
+				@include space(0,0 0 30px 0);
+				                label{
+				                    @include fontstyle($font-size + 2, $font-weight + 300,$dark-blue,uppercase,0, 0);
+				                    line-height: $font-size +7;
+				                    span{
+				                        color: #ff7267;
+				                    }
+				                }
+				.form-control{
+				                background: transparent;
+				                @include fontstyle($font-size + 4, normal,normal,$dark-blue,none,6px 15px,0);color:;
+				                @include placholder;@include radius(0);border:0;border-bottom: 1px solid #ddd;@include shadowarea(none);
+				            }
+
+				.select2-container--default {
+				                .select2-selection--single{
+				                    background-color: transparent;border: 0;
+				                    border-bottom: 1px solid #ddd; 
+				                    @include radius(0px); @include shadowarea(none);
+				                    height: 38px;
+				                    line-height: 38px;
+
+				                    .select2-selection__arrow{
+				                        height:38px;width:35px;
+				                        background: transparent url(../images/arrow-bottom.png) no-repeat 50% 50%;
+
+				                        b{
+				                           display:none; 
+				                        }
+				                    }
+				                }
+
+				                .select2-selection__rendered{
+				                    color: $dark-blue;
+				                    line-height: 38px;
+				                }
+				            }
+				            .select2-container--open.select2-container--focus {
+				                .select2-selection__arrow{
+				                    background: transparent url(../images/arrow-top.png) no-repeat 50% 50%;
+				                }
+				            }
+				            
+			            }*/ }
+		}
+	}

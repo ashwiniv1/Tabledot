@@ -1,0 +1,40 @@
+.header-caption { @include space(70px 0, 0);
+    h2 { @include fontstyle($font-size + 15, $font-weight + 300, none, 0,0, 0 0 15px 0); }
+    p { @include fontstyle($font-size + 2, normal, none,0, 0, 0); }
+}
+.customer-tab { @include space(50px 0, 0);
+    .customer-media { @include shadowarea(0 0 18px rgba($black, .16)); border: solid 11px $white; background: $white; position: relative;
+        .cutomer-contact { @include positionarea(absolute, auto, -30px, auto, 20px); @include width(50px, 50px); background: $green; @include radius(50%); line-height: $font-size + 36; }
+    }
+    .profile-caption { @include space(0, 30px 0 20px  0);
+        .profile-head { @include fontstyle($font-size + 12, bold, $dark-blue, uppercase, 0, 0); }
+    }
+    .panel { border: 0; @include radius(0); background: transparent; @include shadowarea(none); 
+        @extend .tab-section;
+        .panel-body { 
+            .tab-address { border-bottom: 1px solid #e8eaeb; @include space(0 0 20px 0, 0 0 20px 0); color: $dark-blue;
+                .add-heading { @include fontstyle($font-size + 1, $font-weight + 300, $dark-blue, uppercase, 0, 0 0 20px 0); line-height: $font-size  + 4; }
+                p { @include fontstyle($font-size + 1, normal, inherit, none, 0, 0); line-height: $font-size + 11;
+                    span { width: 150px; display: $display-inline; }
+                }
+                .view-in { @include fontstyle($font-size + 1, $font-weight + 300, inherit, capitalize, 0, 10px 0 0 0); line-height: $font-size +11; display: $display; text-decoration: underline;
+                    &:hover { color: $orange; }
+                }
+                &:last-child { border: 0; }
+            }            
+        }
+    }
+}
+.review-section { color: $dark-blue;
+    .add-heading { @include fontstyle($font-size + 1, $font-weight + 300, $dark-blue, uppercase, 0, 0); line-height: $font-size  + 4; }
+    p { @include fontstyle($font-size + 1, normal, inherit ,none, 0, 0); }
+}
+
+/*carousel*/
+.carousel-fade { .carousel-inner { .item { transition-property: opacity; }
+        .item, .active.left, .active.right { opacity: 0; }
+        .active, .next.left, .prev.right { opacity: 1; }
+        .next, .prev, .active.left, .active.right { left: 0; transform: translate3d(0, 0, 0); }
+    }
+    .carousel-control { z-index: 2; }
+}

@@ -1,0 +1,31 @@
+//popup-modal
+.popup-modal { text-align: center; @include radius(8px); @include shadowarea(0 0 95px rgba($black, .54));
+    .modal-dialog { margin: 120px auto 30px; }
+    .popup-media { position: absolute; top: -140px; left: auto; right: auto; margin: 0 auto; background: $white; padding: 30px 55px; @include radius(50%); display: inline-block; text-align: center; border: 20px solid $white; height: 263px; width: 263px; }
+    .model-border { border: 1px solid rgba($black, 0.10); margin: 20px; }
+    .modal-header { border-bottom: 0; display: flex; align-items: center; justify-content: center; position: relative;
+        .close { right: -35px; position: absolute; top: -35px; background: #eee; opacity: 1; @include radius(50%); padding: 8px 12px; }
+    }
+    .modal-body { margin-top: 40px;
+        h3 { font-size: $font-size + 17; font-weight: bold; text-transform: uppercase; color: #f63306; }
+        p { font-size: $font-size + 7; color: $dark-blue; }
+        .btn-success { padding: 12px 30px;
+            @include md { padding: 8px 30px; }
+            @include sm { margin: 0; }
+         }
+    }
+}
+.pop_up_dateoicker { width: 50%; margin: 45px auto 0px; color: $dark-blue;
+    label { width: 100%; @include fontstyle( $font-size, $font-weight + 300, $dark-blue, uppercase, 0, 0px 0px 20px 0px); text-align: left; }
+    input { width: 100%; border: 1px solid lighten($black, 90%); padding: 10px 10px; background: transparent; @include radius(0px); @include shadowarea(none); font-size: $font-size + 2; color: $dark-blue; }
+    .input-group-addon { @include radius(0px); }
+    .input-group { margin-bottom: 30px; }
+    .bootstrap-datetimepicker-widget table td.active, .bootstrap-datetimepicker-widget table td.active:hover { background-color: $orange !important; color: $white; text-shadow: 0 -1px 0 rgba($black, 0.25); }
+    .bootstrap-datetimepicker-widget { @include radius(0px !important); }
+}
+#add-side-dish-popup, #customer-order-detail-popupone { 
+     @media (min-width:1400px) {
+        .modal-dialog { width: 1300px; }
+    }    
+    h4 { font-size: $font-size + 7; font-weight: $font-weight + 400; color: $dark-blue; line-height: 35px; }
+}

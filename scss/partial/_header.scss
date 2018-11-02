@@ -1,0 +1,111 @@
+/*header*/
+#top-header { background: url("../images/header-bg.jpg") no-repeat center center; background-size: cover; padding-bottom: 70px;
+    .navbar-toggle { margin: 0; height: 50px; width: 50px; background: #444; @include radius(0px); z-index: 1;
+        .icon-bar { width: 28px; background: $white; transition: .5s ease; }
+        &.collapsed .icon-bar { &:nth-child(2) { transform: rotate(0) translateY(0) translateX(0); }
+            &:nth-child(3) { opacity: 1; }
+            &:nth-child(4) { transform: rotate(0) translateY(0) translateX(0); }
+        }
+        .icon-bar { &:nth-child(2) { transform: rotate(-45deg) translateY(5px) translateX(-5px); }
+            &:nth-child(3) { opacity: 0; }
+            &:nth-child(4) { transform: rotate(45deg) translateY(-4px) translateX(-3px); }
+        }
+    }
+    .navbar-brand { @include space(0 15px, 0);
+        .logo { @include space(0, 0);
+            @include lg { max-width: 200px; }
+            @include md { max-width: 150px; }
+        }
+        @include md { @include space(0 8px, 0); }
+    }
+    .navbar-default .navbar-collapse{ @include shadowarea (none); }
+    .navbar { @include space(30px 0, 0); @include border(none, 0, transparent, 0); }
+    .navbar-nav { @include space(13px 0 0 12px, 0);
+        @include md { padding: 0; }
+    }
+    .menubar { padding-left: 12px;
+        @include xl { padding-left: 0; }
+        @include md { padding: 0; }
+        li { @include fontstyle($font-size + 3, $font-weight + 300, $white, uppercase, 0, 0 17px);
+            @include xl { font-size: $font-size + 2; }
+            @include lg { font-size: $font-size; }
+            @include xl { @include space(0, 0 15px); }
+            @include lg { @include space(0, 0 8px); }
+            @include md { @include space(0, 0px); }
+            a { @include md { @include space(12px, 0px); }
+            }
+        }
+        .dropdown-menu{
+            @include radius (0);
+            padding: 0;
+            background-color: rgba($black, 0.8);
+            li{
+                margin: 0;
+                a{
+                    @include fontstyle($font-size + 3, $font-weight + 300, $white, uppercase, 10px 20px, 0);                    
+                    @include xl { font-size: $font-size + 2; }
+                    @include lg { font-size: $font-size; }
+                    &:hover, &:focus{
+                        background-color: transparent;
+                        color: $orange;
+                    }
+                }
+            }
+        }
+    }
+    .login-nav { .login-nav-media { width: 45px; height: 45px; background-color: $white; @include shadowarea( 0 0 21px rgba($black, .61)); border: solid 2px $white; object-fit: cover;
+            @include xl { width: 35px; height: 35px; }
+        }
+        h4 { padding-left: 6px; display: inline-block; vertical-align: middle; font-size: $font-size + 3; color: $white;
+            @include xl { font-size: $font-size; padding-left: 5px; }
+            @include lg { display: none; }
+        }
+        a { margin-left: 6px; background-color: transparent; display: inline; padding: 0;
+            @include xl { margin-left: 5px; }
+            span { font-size: 21px; color: $white; vertical-align: middle;
+                @include xl { font-size: $font-size + 4; }
+                @include xl { font-size: $font-size + 2; }
+                &:hover { color: $orange; }
+            }
+        }
+        .icon-logout { @include lg { display: none; }
+        }
+        .logout-text { display: none;
+            @include lg { display: inline-block; }
+        }
+    }
+}
+#chef-header { @extend #top-header; padding-bottom: 0;
+    .menubar { li { @include space(0, 0); }
+    }
+    .header-search { padding: 70px 0;
+        @include md { padding: 20px 0; }
+    }
+}
+.header-search { padding: 46px 0 40px;
+    h2 { @include fontstyle( $font-size + 25, $font-weight + 400, $white, uppercase, 0,0 0 14px);
+        @include lg { font-size: $font-size + 14; }
+        @include sm { font-size: $font-size + 10; }
+    }
+    p { font-size: $font-size + 2; color: #e2e2e2; letter-spacing: 1px;
+        @include lg { font-size: $font-size; }
+    }
+    #custom-search-input { margin-top: 24px; padding: 0 10%;
+        @media (max-width:1399px) {
+        padding: 0 0%; }
+        input { @include radius(0px); height: 52px; }
+        .btn-search { @include radius(0px); padding: 9px 26px; font-size: $font-size + 10; background-color: $orange; }
+    }
+}
+.top-steps { padding: 45px 35px;
+    @include xl { padding: 45px 0; }
+    @include sm { display: none; }
+    h5 { font-size: $font-size + 3; font-weight: $font-weight + 300; text-transform: uppercase; color: $white; }
+    span { font-size: 35px; margin-bottom: 2px; }
+    .steps-arrow { padding: 0 105px; position: relative;
+        &:before { content: ""; background: url("../images/left-arrow.png") no-repeat center center; background-size: cover; height: 47px; width: 110px; position: absolute; top: -15px; left: -12px; }
+        &:after { content: ""; background: url("../images/right-arrow.png") no-repeat center center; background-size: cover; height: 47px; width: 110px; position: absolute; bottom: -50px; right: -10px; }
+    }
+}
+
+/*#header*/

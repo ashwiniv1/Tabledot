@@ -1,0 +1,43 @@
+#customer-order-detail-popupone {
+	.invoice_table { width: 100%; float: left; margin-bottom: 50px;
+		table { text-align: center; width: 100%; border: 1px solid lighten($black, 90%);
+			thead { background: #fafbfb;
+				th { @include fontstyle ( $font-size + 3, $font-weight + 300, $dark-blue, uppercase, 25px 10px, 0 ); text-align: center;
+					@include sm { font-size: $font-size + 1; padding: 4px 10px; }
+				}
+			}
+			tbody { 
+				td { font-size: $font-size + 2; color: $dark-blue; padding: 20px 10px; text-align: center;
+					@include sm { font-size: $font-size; padding: 0; }
+					img { margin: 0px 0px 10px 0px; display: inline-block; }
+					span { display: block; font-size: $font-size + 2; color: $dark-blue; margin: 0px 0px 5px 0px; 
+						@include sm { font-size: $font-size; margin: 0; }
+					}
+				}
+			}
+		}
+	}
+	.invoice_final_cal { text-align: left;
+		p { font-size: $font-size + 2; color: $dark-blue; margin: 0px 0px 0px 0px;
+			@include md { margin: 0px 0px 20px 0px; }
+			@include sm { font-size: $font-size; }
+		}
+		.invoic_tally { width: 100%; float: left;
+			h3 { font-size: $font-size + 2; color: $dark-blue; font-weight: 600; margin: 0px 0px 15px 15px;
+				@include sm { font-size: $font-size; margin: 0px 0px 15px 0px;  }
+			}
+			span { font-size: $font-size + 2; color: $dark-blue; margin: 0px 0px 15px 0px; display: inline-block; 
+				@include sm { font-size: $font-size; }
+			}
+			.final_calculation_row { border-top: 1px solid lighten($black, 90%); border-bottom: 1px solid lighten($black, 90%); padding: 25px 0px;
+				h3 { font-size: 20px; color: $dark-blue; font-weight: bold; margin: 0px 0px 0px 15px;
+					@include sm { font-size: $font-size + 4; margin: 0px 0px 0px 0px; }
+				}
+				span { font-size: 20px; color: $green; margin: 0px 0px 0px 0px; display: inline-block; font-weight: bold;
+					@include sm { font-size: $font-size + 4; }
+				}
+			}
+			.invoice-form { margin-top: 25px;}
+		}
+	}
+}

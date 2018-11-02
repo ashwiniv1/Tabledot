@@ -1,0 +1,39 @@
+/*meals available*/
+.todays-available-meals { padding: 50px 0 45px;
+    #meals-available-today { position: relative; padding-bottom: 10px;
+        .meals-media { height: 225px;
+            img { visibility: hidden; }
+        }
+        .meals-box { margin-bottom: 60px;
+            .banner-data { position: absolute; bottom: 10px; left: 70px; right: 70px; z-index: 1; background-color: $white; @include shadowarea(0 0 18px rgba($black, .16)); padding: 20px; height: 100px;
+                h4 { font-size: $font-size + 2; font-weight: $font-weight + 300; text-transform: uppercase; color: $dark-blue; line-height: 20px; letter-spacing: 1px; }
+                &:hover { background-color: $orange; }
+                @include sm { position: relative; left: 0; right: 0; bottom: 0; }
+            }
+        }
+    }
+    .btn-primary { padding: 12px 40px; }
+}
+
+/*#meals available*/
+
+/*popular-meals*/
+.popular-meals { padding: 50px 0 45px; background: url("../images/popular-meals-bg.jpg") no-repeat center center; background-size: cover; }
+.popular-meals-box { @include shadowarea(0 0 18px rgba($black, .16)); border: solid 11px $white; margin-bottom: 30px;
+    .popular-meals-media { height: 220px; max-width: 100%;
+        @include xl { height: 180px; }
+        @include lg { height: 120px; }
+        @include md { height: 150px; }
+        @include sm { height: auto; }
+        img { width: 100%; height: 100%; object-fit: cover; }
+    }
+    .popular-meals-content { margin-top: 10px; }
+    h4 { font-size: 16px; font-weight: bold; text-transform: uppercase; color: $dark-blue;
+        @include lg { font-size: $font-size; }
+    }
+    .btn-success { padding: 10px 30px; 
+        @include lg { padding: 8px 20px; font-size: $font-size; }
+    }
+}
+
+/*#popular-meals*/

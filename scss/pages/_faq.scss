@@ -1,0 +1,27 @@
+/*faq*/
+.faq-block { padding: 40px 0; display: inline-block; width: 100%; counter-reset: section;
+    .panel-group .panel { @include radius(0px); @include shadowarea(none); border: none; }
+    .panel-count { position: relative; margin-bottom: 40px;
+        @include sm { margin-bottom: 20px; }
+        .counter{
+            font-size: 39px; font-weight: bold; color: #e3e3e3; position: absolute; top: 0; left: -15px; z-index: 1;
+            @include sm { font-size: 26px; left: -25px; }
+        }
+        // &:before { counter-increment: section; content: "0"counter(section); font-size: 39px; font-weight: bold; color: #e3e3e3; position: absolute; top: 0; left: -15px; z-index: 1; display: inline-block; }
+    }
+    .panel-default { padding: 0 45px;
+        @include sm { padding: 0 20px; }
+        &:nth-child(odd) { clear: both; }
+    }
+    .panel-heading { @include radius(0px); background-color: transparent; border-bottom: 1px solid rgba($dark-blue, 0.1); padding: 0;
+        .panel-title { margin-bottom: 0; }
+    }
+    .icon { color: #aaaaaa; font-size: $font-size + 2; }
+    .faq-title { font-size: $font-size + 1; color: $dark-blue; font-weight: $font-weight + 100; display: block; padding: 14px 0;
+        @include sm { padding: 0 0 5px; }
+    }
+    .faq-content { font-size: 14px; color: lighten($black, 44%); }
+    .panel-body { border: none !important; }
+}
+
+/*#faq*/

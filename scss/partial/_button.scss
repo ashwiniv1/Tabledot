@@ -1,0 +1,20 @@
+.btn { text-transform: uppercase; }
+.btn-const { margin: 20px auto; padding: 12px 55px; @include transition(all, 0.5s, ease-in-out);
+    @include md { padding: 8px 40px; }
+    &:hover, &:focus { background-color: $dark-blue; color: $white; outline: none; }
+}
+.btn-primary { @extend .btn-const;
+    &:hover { background-color: $green; border-color: $green; }
+}
+.btn-success { @extend .btn-const; }
+.btn-success-sec { @extend .btn-const; background-color: $green; }
+.btn-info { @extend .btn-const; }
+.btn-gray { @extend .btn-const; background-color: lighten($black, 96%); color: $dark-blue; }
+.btn-default { margin: 20px auto; padding: 12px 30px; @include transition(all, 0.5s, ease-in-out);
+	@include md { padding: 8px 30px; }
+	@include sm { padding: 8px 20px; }
+    &:hover { background-color: $dark-blue; color: $white;outline: none; }
+}
+.btn-default.disabled { @extend .btn-const; background-color: lighten($black, 93%); color: $dark-blue; }
+.btn-border { @extend .btn-const; color:$dark-blue; background: transparent; border: solid 1px rgba(255, 255, 255, 0.5); }
+.btn-border1 { @extend .btn-const; color:$white; background: transparent; border: solid 1px rgba(255, 255, 255, 0.5); }

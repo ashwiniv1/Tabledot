@@ -1,0 +1,112 @@
+/**Checkout section**/
+.checkout_sec { padding: 50px 0px;
+    h2 { font-size: 29px; color: $dark-blue; float: left; font-weight: bold; margin: 0px 0px 35px 0px; text-transform: uppercase;
+        @include sm { width: 100%; text-align: center; }
+    }
+    .steps-wrapper { padding: 45px 0 60px; position: relative;
+        @include md { padding-bottom: 20px; }
+        .connecting-line { height: 2px; background: #e0e0e0; position: absolute; width: 80%; margin: 0 auto; left: 0; right: 0; top: 35%; z-index: 0;
+            @include lg { width: 70%; top: 30%; }
+            @include md { top: 40%; }
+            @include sm { display: none; }
+        }
+        .steps-details { .steps-list { width: 24.5%;
+                @include lg { width: 19%; }
+                @include sm { width: 100%; margin-bottom: 25px; }
+                .round-steps { width: 90px; height: 90px; background: #fafafa; @include radius(50%); padding: 15px; margin: 0 auto; position: relative;
+                    span { font-size: 50px; color: $dark-blue;
+                        @include md { font-size: 35px; }
+                    }
+                    @include md { width: 60px; height: 60px; padding: 10px 12px; }
+                }
+                .steps-title { padding-top: 30px; vertical-align: top; display: inline-block; color: $dark-blue;
+                    @include sm { padding-top: 10px; }
+                    h5 { font-size: 17px; font-weight: bold; text-transform: uppercase; color: $dark-blue;
+                        @include md { font-size: $font-size + (-2); }
+                    }
+                }
+                &.active { .round-steps { @include shadowarea(0 0 40px rgba(255, 127, 0, .27));
+                        span { color: $orange; }
+                    }
+                    .steps-title { h5 { color: $orange; position: relative; }
+                        h5:before { content: ''; background: url('../images/orange_traingle.png'); width: 16px; height: 13px; display: block; position: absolute; top: 25px; left: 0; right: 0; margin: 0 auto; }
+                    }
+                }
+                &.completed { .round-steps { background-color: $green; position: relative;
+                        span { color: $white; }
+                        &:after { font-family: 'icomoon'; content: "\e902"; position: absolute; top: 0; right: 0; background: #000; @include radius(50%); color: $white; height: 30px; width: 30px; font-size: 21px;
+                            @include lg { top: -4px; height: 20px; width: 20px; font-size: 14px; }
+                        }
+                    }
+                    .steps-title { h5 { color: $green; }
+                    }
+                }
+            }
+        }
+    }
+    .checkout_cont { padding: 50px; border: 1px solid lighten($black, 90%); float: left; width: 100%;
+        @include sm { padding: 25px; }
+        h3 { font-size: 19px; color: $dark-blue; font-weight: bold; margin: 0px 0px 35px 0px; text-transform: uppercase; position: relative; }
+        h3:after { content: ''; width: 55px; height: 1px; display: block; background: lighten($black, 90%); position: absolute; top: 10px; left: 10%;
+            @include lg { display: none; }
+        }
+        .payment_info_head:after { left: 27%; }
+        .check_review_head:after { left: 16%; }
+        .btn-save-check { color: $white; background-color: $green; border-color: $green; margin: 70px 30px 0px 0px; padding: 12px 55px; font-size: 16px;
+            @include sm { font-size: 14px; margin: 25px 0px 0px 0px; padding: 12px 35px; }
+        }
+        .btn-back-check { color: $dark-blue; background-color: lighten($black, 96%); border-color: lighten($black, 96%); margin: 70px 0px 0px 0px; padding: 12px 55px; font-size: 16px;
+            @include sm { font-size: 14px; margin: 25px 0px 0px 0px; padding: 12px 35px; }
+        }
+        .btn-continoue-shp { color: $white; background-color: $dark-blue; border-color: $dark-blue; margin: 70px 30px 0px 0px; padding: 12px 55px; font-size: 16px;
+            @include sm { font-size: 14px; margin: 250px 0px 0px 0px; padding: 12px 35px; }
+        }
+        label { width: 100%; font-size: 16px; }
+        input, select { width: 100%; border: none; border-bottom: 1px solid #e5e1df; background: transparent; @include radius(0px); @include shadowarea(none); }
+        .form-group { margin-bottom: 60px; }
+        .label_row { margin-bottom: 50px; }
+        .label_row label { color: $dark-blue; margin-bottom: 10px; font-weight: 600; }
+        .form-check { position: relative; float: left; width: 100%;
+            .form-check-label { color: lighten($black, 48%); font-size: $font-size + 2; display: inline-block; font-weight: $font-weight + 100; position: relative; cursor: pointer; pointer-events: initial;
+                @include md { font-size: $font-size; }
+                @include sm { font-size: $font-size + (-2); }
+                input { visibility: hidden; position: absolute;
+                    &:checked+span { @include shadowarea(inset 0 0 0 3px $white); background: $orange;
+                        @include sm { @include shadowarea(inset 0 0 0 2px $white); }
+                    }
+                }
+                span { display: inline-block; vertical-align: middle; width: 18px; height: 18px; transition: 0.2s; @include shadowarea(inset 0 0 0 8px $white); border: 1px solid #ededed; margin-right: 10px;
+                    @include sm { width: 13px; height: 13px; }
+                }
+            }
+        }
+        .checkout_address { border-bottom: 1px solid lighten($black, 90%); margin-bottom: 40px;
+            .btn-update-check { color: $dark-blue; background-color: lighten($black, 96%); border-color: lighten($black, 96%); margin: 0px 0px 35px 0px; padding: 12px 55px; font-size: 16px; float: right; }
+        }
+        .checkout_time { h3:after { left: 17%; }
+            label { font-size: 15px; color: $dark-blue; font-weight: 600; }
+            span { font-size: 15px; color: $dark-blue; }
+        }
+        .check_cont_table { width: 100%; border: 1px solid lighten($black, 90%); margin-bottom: 30px; float: left;
+            .check_cont_head { width: 100%; padding: 25px 15px; background: #fafbfb; float: left;
+                h4 { font-size: 17px; color: $dark-blue; font-weight: bold; float: left; margin: 0px; }
+                a { font-size: 17px; color: $dark-blue; font-weight: 600; float: right; margin: 0px; position: relative; }
+                a:before { content: "\e065"; font-family: 'Glyphicons Halflings'; display: block; position: absolute; top: 0px; left: -25px; }
+            }
+            .check_cont_body { width: 100%; font-size: 16px; color: $dark-blue; padding: 20px 15px; float: left;
+                table { width: 100%;
+                    td { font-size: 16px; color: $dark-blue; padding: 20px 10px;
+                        img { margin: 0px 0px 10px 0px; display: inline-block; }
+                        span { display: block; font-size: 16px; color: $dark-blue; margin: 0px 0px 5px 0px; }
+                        h4 { font-size: 16px; color: $dark-blue; font-weight: bold; margin: 0px 0px 0px 0px; }
+                    }
+                }
+            }
+        }
+        .reciept_cont { padding: 30px 0px;
+            h2 { font-size: 32px; color: $dark-blue; font-weight: bold; margin: 0px 0px 30px 0px; width: 100%; }
+            p { font-size: 18px; color: $dark-blue; margin: 0px 0px 0px 0px; }
+            .btn-continoue-shp { margin-top: 40px; }
+        }
+    }
+}

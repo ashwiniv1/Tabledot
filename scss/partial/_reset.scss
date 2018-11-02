@@ -1,0 +1,36 @@
+/*body*/
+
+*{
+	padding: $padding;
+    margin: $margin; 
+}
+html{
+	padding: $padding;
+	margin: $margin;
+    font-size: $font-size;    
+    margin-top: 0 !important;
+}
+body{
+	padding: $padding;
+    margin: $margin; 
+	font-family: $primary-family;
+	font-weight: $font-weight + 100;
+	color:$white;
+
+	p,form,ul,li{
+        padding: $padding;
+        margin: $margin;
+        list-style: $list-style;
+    }
+
+	h1,h2,h3,h4,h5,h6{
+        padding: $padding;
+        margin: $margin; 
+    }
+    a:hover, a:focus{
+        text-decoration: $decoartion;
+    }
+    a:focus{
+        outline:none;
+    }
+}

@@ -1,0 +1,289 @@
+/*sign up*/
+.signup-block { 
+    .login-title { padding: 8px 0 30px;
+        @include md { padding: 0 0 10px; }
+    }
+    .signup-buttons { display: inline-block; width: 100%;
+        ul { 
+            li { width: 48%;
+                @include md { width: 100%; }
+                &:first-child { margin-right: 18px;
+                    @include xl { margin-right: 10px; }
+                    @include md { margin-bottom: 10px; margin-right: 0; }
+                }
+                .btn-signup { width: 100%; @include radius(10px); @include fontstyle($font-size + 4, $font-weight + 400, $dark-blue, uppercase,6px 12px,0);background: transparent; border: 2px solid rgba($black, .1);
+                    @include xl { font-size: $font-size + 2; }
+                    @include lg { font-size: $font-size; }
+                    &.active, &:hover { background-color: $orange; color: $white; }
+                    @include md { padding: 10px; }
+                    img { @include xl { @include width (25px, 25px); }
+                    }
+                    span { font-size: 45px; vertical-align: middle; padding-right: 15px;
+                        @include lg { font-size: 30px; padding-right: 10px; }
+                    }
+                }
+            }
+        }
+    }
+}
+.form-check-label { .checkbox-left { float: left; height: 25px; }
+    a { border-bottom: 1px solid lighten($black, 10%); color: lighten($black, 10%);
+        &:hover { color: $orange; border-bottom: 1px solid $orange; }
+    }
+}
+
+/*#sign up*/
+
+/*sign up customer*/
+.signup-customer { padding-top: 40px;
+    .login-title { padding: 0;
+        h3 { @include fontstyle($font-size + 24, $font-weight + 400, $dark-blue, uppercase,0,0);
+            @include xl { font-size: $font-size + 20; }
+            @include xl { font-size: $font-size + 13; }
+        }
+    }
+    .signup-form { margin-top: 30px; }
+}
+.chef-btngroup { float: right;
+    .btn-border {        /*width: 158px;
+                height: 43px;*/
+        @include space (12px 30px, 30px 0 0 0);
+        @include md { height: 100%; padding: 8px 20px; width: auto; }
+    }
+    .btn-green { margin: 0; margin-top: 30px; }
+    .btn-disable { width: 158px; height: 43px; margin: 0; margin-top: 30px;
+        @include md { height: 100%; padding: 8px 20px; width: auto; }
+    }
+}
+.signup-customer-media { position: relative; @include shadowarea(-10px 0px 20px 0px rgba($black, 0.2)); background: url("../images/signup-profile-bg.jpg") no-repeat center center; background-size: cover;
+    .profile-progressbar { position: relative; padding: 40px;
+        h3 { @include fontstyle($font-size + 24, $font-weight + 400, $white, uppercase, 0, 13px 0 0 0);
+            @include xl { margin-top: 20px; font-size: $font-size + 16; }
+            @include md { margin-top: 25px; font-size: $font-size + 6; }
+        }
+        h4 { @include fontstyle($font-size + 3, $font-weight + 400, $white, uppercase, 0 0 20px 0, 0);
+            @include lg { font-size: $font-size + 1; }
+            @include md { font-size: $font-size + (-2); }
+        }
+        .progress { background-color: #dbdbdb; height: 10px; @include radius(5px); margin: 0; }
+        .progress-bar { background: rgba(255, 128, 0, 1); background: -moz-linear-gradient(left, rgba(255, 128, 0, 1) 0%, rgba(124, 193, 51, 1) 100%); background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255, 128, 0, 1)), color-stop(100%, rgba(124, 193, 51, 1))); background: -webkit-linear-gradient(left, rgba(255, 128, 0, 1) 0%, rgba(124, 193, 51, 1) 100%); background: -o-linear-gradient(left, rgba(255, 128, 0, 1) 0%, rgba(124, 193, 51, 1) 100%); background: -ms-linear-gradient(left, rgba(255, 128, 0, 1) 0%, rgba(124, 193, 51, 1) 100%); background: linear-gradient(to right, rgba(255, 128, 0, 1) 0%, rgba(124, 193, 51, 1) 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff8000', endColorstr='#7cc133', GradientType=1); }
+    }
+    .profile-media { text-align: center; margin: 0 auto;
+        .profile-image { display: inline-block; width: 200px; height: 200px; margin-top: 60px; margin-bottom: 15px;
+            @include md { width: 150px; height: 150px; }
+            @include sm { margin-top: 0px; }
+            img { margin: 0 auto; @include radius(50%); @include shadowarea(0 0 0 15px rgba(255, 255, 255, 0.14)); height: 100%; width: 100%; object-fit: contain; }
+        }
+        .chefprofile-image { @extend .profile-image; width: 165px; height: 165px; margin-top: 0;
+            @include md { width: 130px; height: 130px; }
+        }
+        h5 { @include fontstyle($font-size + 4, $font-weight + 400, #fbfbfb, uppercase, 12px 0 25px,0);
+            @include md { font-size: $font-size + 2; }
+        }
+    }
+    .chefprofile-progressbar { @extend .profile-progressbar; padding: 60px 35px;
+        @include md { padding: 50px 20px; }
+    }
+    .skip { position: absolute; bottom: 52px; left: 0; right: 0; text-align: center; font-size: $font-size; text-transform: uppercase;
+        @include sm { position: relative; bottom: 0; padding: 10px; }
+    }
+}
+.file-upload { display: inline-block;
+    .file-select { display: block; cursor: pointer; text-align: left; overflow: hidden; position: relative;
+        .btn-browse { @include fontstyle ( $font-size, $font-weight + 300, #6a6a6a, uppercase, 10px 30px, 0 0 0 20px ); @include radius(21px); background-color: $white; border: solid 1px rgba($black, .17); }
+        .btn-media-browse { @include radius(21px); padding: 10px 30px; background-color: $white; font-size: 14px; text-transform: uppercase; color: $white; background-color: $orange; }
+        .file-select-button { display: inline-block; }
+        .file-select-name { display: inline-block; color: lighten($black, 68%); font-size: $font-size + 2; font-weight: $font-weight + 100;
+            @include md { font-size: $font-size; }
+        }
+        &:hover { @include transition(all , .2s,  ease-in-out);
+            .file-select-button { @include transition(all , .2s,  ease-in-out); }
+        }
+        input[type=file] { z-index: 100; cursor: pointer; position: absolute; height: 100%; width: 100%; top: 0; left: 0; opacity: 0; filter: alpha(opacity=0); }
+        &.file-select-disabled { opacity: 0.65;
+            &:hover { cursor: default; display: block; color: #34495e; cursor: pointer; margin-top: 5px; text-align: left; overflow: hidden; position: relative;
+                .file-select-button { display: inline-block; }
+                .file-select-name { line-height: 40px; display: inline-block; padding: 0 10px; }
+            }
+        }
+    }
+    &.active .file-select { border-color: #3fa46a; @include transition(all , .2s,  ease-in-out);
+        .btn-browse { background-color: $orange; color: $white; }
+        .btn-media-browse { background-color: $white; color: $orange; }
+        .file-select-button { @include transition(all , .2s,  ease-in-out); }
+    }
+}
+
+/*#sign up customer*/
+
+/*sign up chef*/
+#chef-profile { 
+    .cust-8 { @media (min-width:1400px) {
+        width: 65%; }
+    }
+    .cust-4 { @media (min-width:1400px) {
+        width: 35%; }
+    }
+    // .left-block, .right-block { min-height: 1200px; }
+    }    
+    .signup-chef { padding: 40px 50px;    display: inline-block; width: 100%;
+        @include sm { padding: 20px; }
+        .login-title { padding: 0;
+            h3 { font-size: $font-size + 24; text-transform: uppercase; font-weight: $font-weight + 400; color: $dark-blue;
+                @include md { font-size: $font-size + 14; }
+            }
+        }
+        .signup-form { margin-top: 30px; display: inline-block;
+            .nav-stacked { li { &.active { border-top: 1px solid #000; border-left: 1px solid #000; border-bottom: 1px solid #000; @include radius(10px 0 0 10px); }
+                }
+            }
+        }
+        .steps-wrapper { padding: 45px 0 60px; position: relative;
+            @include md { padding-bottom: 0; }
+            .connecting-line { height: 2px; background: #e0e0e0; position: absolute; width: 80%; margin: 0 auto; left: 0; right: 0; top: 35%; z-index: 0;
+                @include lg { width: 70%; top: 30%; }
+                @include md { top: 40%; }
+                @include sm { display: none; }
+            }
+            .steps-details { .steps-list { width: 19.5%;
+                    @include lg { width: 19%; }
+                    @include sm { width: 100%; margin-bottom: 25px; }
+                    .round-steps { width: 60px; height: 60px; background: #fafafa; @include radius(50%); padding: 15px; margin: 0 auto; position: relative;
+                        span { font-size: 35px; color: $dark-blue;
+                            @include md { font-size: 22px; }
+                        }
+                        @include md { width: 40px; height: 40px; padding: 10px 12px; }
+                    }
+                    .steps-title { padding-top: 30px; vertical-align: top; display: inline-block; color: $dark-blue;
+                        @include sm { padding-top: 10px; }
+                        h5 { font-size: $font-size + 2; color: $dark-blue;
+                            @include md { font-size: $font-size + (-2); }
+                        }
+                    }
+                    &.active { .round-steps { @include shadowarea(0 0 40px rgba(255, 127, 0, .27));
+                            span { color: $orange; }
+                        }
+                        .steps-title { h5 { color: $orange; }
+                        }
+                    }
+                    &.completed { .round-steps { background-color: $green; position: relative;
+                            span { color: $white; }
+                            &:after { font-family: 'icomoon'; content: "\e902"; position: absolute; top: 0; right: 0; background: #000; @include radius(50%); color: $white; height: 20px; width: 20px;
+                                @include lg { top: -4px; height: 15px; width: 15px; font-size: 12px; }
+                            }
+                        }
+                        .steps-title { h5 { color: $green; }
+                        }
+                    }
+                }
+            }
+        }
+        .cancellation-policy { font-size: $font-size + 2; text-decoration: underline; color: #989898; margin-top: 20px; display: block;
+            @include lg { font-size: $font-size; margin-top: 10px; }
+        }
+        @extend .date-sec;
+    }
+    /*verification*/
+    .verification { margin-top: 20px;
+        .verify-title { font-size: $font-size + 7; font-weight: $font-weight + 300; color: $dark-blue; margin-bottom: 40px; }
+        .upload-label { @include md {display: inline-block; width: 100%; padding-bottom: 30px; }}
+        .file-media { position: relative;
+            a { padding: 12px 16px; @include radius(50%); border: solid 1px rgba($black, 0.27); display: inline-block; margin-top: -20px; @include width ( 55px, 55px );
+                @include lg { @include width ( 45px, 45px ); margin-top: -10px; padding: 10px 14px; }
+                @include md { position: relative; top: 0; display: inline-block; }
+            }
+            .icon-upload {
+                font-size: $font-size + 16; color: #999999;
+                @include lg { font-size: $font-size + 8; }
+            }
+        }
+    }
+    .file-upload-status{ position: relative; margin-top: -20px;
+        @include md { margin-top: 0px; }
+        h6, p {
+            font-size: $font-size + (-1); color: lighten($black, 43%);
+        }
+        .progress {
+            height: 3px; margin: 10px 0; background-color: lighten($black, 84%);
+            .upload-close-icon{
+                position: absolute; right: 0; color: #f00; top: 0;
+                @include lg { top: -12px; }
+            }
+        }
+    }
+
+    .agreement-title { font-size: $font-size + 7; font-weight: $font-weight + 300; color: $dark-blue; margin-bottom: 30px;
+    }
+
+    /*Legal doc*/
+    .legal-form { margin-top: 20px !important;
+        .legal-link { color: $dark-blue; text-decoration: underline; font-weight: 600; font-size: $font-size + 4; }
+        .legal-accepted { color: lighten($black, 53%); font-size: $font-size + 1; font-weight: 500;
+            span { color: $green; margin-right: 10px; font-size: $font-size + 16; font-weight: $font-weight + 300; vertical-align: middle; }
+        }
+        .legal-pending { @extend .legal-accepted;
+            span { color: #ff0000; }
+        }
+        
+        .agreement { overflow-x: scroll; overflow-y: scroll; height: 430px; border: solid 1px rgba($black, 0.3); padding: 30px 40px;
+            @include sm { padding: 20px; }
+            ul { li { color: $dark-blue; line-height: 30px; }
+            }
+        }
+    }
+
+    /*Bank Detail*/
+    .bank-form { margin-top: 30px; display: inline-block;
+        .nav-stacked { padding-right: 0; margin-top: 15px;
+            li { &.active { border-top: 1px solid lighten($black, 68%); border-left: 1px solid lighten($black, 68%); border-bottom: 1px solid lighten($black, 68%); @include radius(10px 0 0 10px);
+                    @include md { border-right: 1px solid lighten($black, 68%); border-bottom: 0px; @include radius(10px 10px 0 0); }
+                    a { color: $dark-blue; font-weight: 700; }
+                }
+                a { color: #818181; font-size: 16px; font-weight: 400; text-transform: uppercase;
+                    &:hover { @include radius(10px 0 0 10px); }
+                }
+            }
+        }
+        .bank-content { border-left: 1px solid lighten($black, 68%); padding-left: 30px;
+            @include md { border-left: 0; padding-left: 0; padding-top: 30px; }
+            .save-cancel { margin-top: 15px;
+                li { a { color: lighten($black, 48%); font-size: 16px; font-weight: 500; text-decoration: underline; }
+                }
+            }
+        }
+    }
+
+    /*video*/
+    .training-video { display: inline-block; width: 100%;
+        .training-video-block { margin: 0 0 35px 0;
+            .training-video-media { position: relative; @include width (100%, 210px); 
+                @include lg {  @include width (100%, auto);  }
+                .play-icon { font-size: 50px; position: absolute; left: 0; right: 0; text-align: center; top: 40%; }
+                    img { @include width (100%, 100%); object-fit: cover; }
+                }
+                h4 { text-align: center; font-size: 16px; margin: 20px 0; display: inline-block; width: 100%;
+                    a { color: $dark-blue; }
+                }
+            }
+        }
+        .video-modal { .modal-dialog { margin: 100px auto;
+                .modal-content { @include radius(0px);
+                    .modal-header { border-bottom: none;
+                        .modal-title { color: $black; font-size: 18px; }
+                        .close { position: absolute; top: 10px; right: 10px; font-size: $font-size + 14; }
+                    }
+                    .modal-footer { border-top: none;
+                        button { }
+                    }
+                }
+            }
+        }
+        .pagination>li>a, .pagination>li>span { @include radius(50%); @include space(8px 14px,0 5px); @include width (35px, 35px); }
+        .pagination>li{
+            &:first-child a, &:last-child a{
+                border: none;
+            }
+        }
+        .tax-title { color: $dark-blue; padding-bottom: 40px; display: inline-block; width: 100%; }
+
+        /*#sign up chef*/

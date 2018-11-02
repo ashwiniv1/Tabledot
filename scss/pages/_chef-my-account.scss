@@ -1,0 +1,164 @@
+.info-tab { @include space(50px 0, 0);
+    .customer-media { @include shadowarea(0 0 18px #f7f7f7); @include width(250px, 250px); margin: auto; position: relative; @include radius(50%);
+        @include lg { @include width(200px, 200px); }
+        img.chef { @include radius(50%); @include width(250px, 250px);
+            @include lg { @include width(200px, 200px); }
+        }
+        .cutomer-contact { @include positionarea(absolute, auto, 5px, auto, 32px); @include width(50px, 50px); padding: 2px; background: $green; @include shadowarea(0 0 15px $white); @include radius(50%); line-height: $font-size + 36;
+            @include md { right: 12px; padding: 2px; @include width(40px, 40px); }
+            span { font-size: $font-size + 32;
+                @include md { font-size: $font-size + 21; }
+            }
+        }
+    }
+    .profile-caption { @include space(0, 30px 0 20px  0);
+        .profile-head { @include fontstyle($font-size + 3, bold, $dark-blue, uppercase, 0, 0); }
+    }
+    // .chef-border { border-right: 4px solid $orange;  }    
+    .panel { 
+        @extend .tab-section;
+        /*.panel-heading {
+            .nav-tabs { li { a { padding: 15px 25px; } } }
+        }*/        
+        .panel-body { 
+            .select-aviliability { @include space(30px 50px, 0); position: relative;
+                @include md { padding: 30px 10px; }
+                @include sm { padding: 30px 0; }
+                .aviliability-close { 
+                    a { @include width (35px, 35px); background: $dark-blue; color: $white; padding: 6px 10px; @include radius (50%); display: inline-block; position: absolute; top: 0;
+                        @include md { @include width (30px, 30px); padding: 6px 8px; }
+                        span{ font-size: $font-size + 8;
+                            @include md { font-size: $font-size + 4; }
+                        }
+                    }
+                }
+                .form-wrapper { color: $dark-blue; @include space(0, 0 0 50px 0);
+                    h4{
+                        font-size: $font-size + 2; color: lighten($black, 68%);
+                    }
+                    a { @include fontstyle($font-size + 4, $font-weight + 300, $dark-blue, normal, 6px 15px, 0); line-height: $font-size + 26; @include  transition(all, 1s, linear);
+                        &:hover { color: $orange; }
+                    }
+                    .view { text-decoration: underline; }                    
+                    ul { @include space(0, 50px 0 0 0);
+                        li { position: relative; margin-right: 20px;
+                            a { @include fontstyle($font-size + 3, $font-weight + 300, $dark-blue, capitalize, 15px 30px, 0);
+                                @include lg { padding: 15px 10px; }
+                                i { @include fontstyle($font-size + 10, bold, inherit, uppercase, 0, 0 7px 0 0); vertical-align: middle; }
+                                &:hover { background: #f6f6f6; }
+                            }
+                            &.active { a { background: #f6f6f6; }
+                                &:after { @include positionarea(absolute, -30px, auto, auto, 0px); @include width(30px, 30px); text-align: $text-center; line-height: $font-size + 16; @include gredient; content: '\f00c'; @include radius(50%); font-family: 'FontAwesome'; }
+                            }
+                            &:last-child { margin: 0; }
+                        }
+                    }
+                    .btn-submit { background: $green; @include radius(50px); @include fontstyle($font-size + 2, $font-weight + 300, $white, uppercase, 10px 30px, 0); @include  transition(all, 1s, linear);
+                        &:hover, &:focus { outline: none; background: $dark-blue; }
+                    }
+                }
+                @extend .date-sec;
+                .profilearea { background: #fbfbfb; color: $dark-blue; @include space(30px 50px, 0 0 50px 0);
+                    p { @include fontstyle($font-size + 3, normal, $dark-blue, none, 0, 0 0 20px 0); line-height: $font-size + 26; }
+                    label { text-align: $text-left; }
+                    .or { @include fontstyle($font-size + 4, bold, $dark-blue, uppercase, 0, 20px 0);text-align: $text-center; }
+                    .pretty.p-default { label { @include fontstyle($font-size + 2, normal, #21343c, none, 0, 0px 0); line-height: $font-size + 26; }
+                    }
+                }
+                .panel { border: 0;
+                    .panel-heading { .nav-tabs { border: 0;
+                            li { margin-right: 30px;
+                                a { background: transparent; line-height: $font-size + 7; @include fontstyle($font-size, normal, $dark-blue, uppercase, 10px 15px, 0); }
+                                &.active { a { border-bottom: 3px solid $orange; color: $orange; font-weight: bold; }
+                                }
+                                &:last-child { margin: 0; }
+                            }
+                        }
+                    }
+                    .panel-body { .heading-box { background: #f3f4f4; @include space(20px 15px, 20px 0 0 0);
+                            span { @include fontstyle($font-size, bold, $dark-blue, uppercase, 0, 0); line-height: $font-size + 7;
+                                a { font-size: $font-size + 10; margin-right: 10px;
+                                    i { vertical-align: middle; }
+                                    &.check-sucess { color: $green; }
+                                }
+                            }
+                        }
+                        .border-credit { border-bottom: 1px solid #ddd;
+                            p { strong { width: auto; }
+                            }
+                            .pay-out { a { background: $dark-blue; line-height: $font-size + 7; @include fontstyle($font-size, bold, $white, uppercase, 10px 25px, 0); @include radius(50px); @include transition(all, 1s, linear);
+                                    &:hover, &:focus { background: $green; }
+                                }
+                            }
+                        }
+                        .border-bottom { @include space(20px 0, 20px 0); border-bottom: 1px solid #ddd;
+                            p { @include fontstyle($font-size, $font-weight + 300, $dark-blue, uppercase, 0, 0); line-height: $font-size + 16; }
+                            strong { @include fontstyle($font-size, bold, $dark-blue, uppercase, 0, 0); line-height: $font-size + 7; width: 150px; display: $display-inline; }
+
+                            /*.select2-container--default{
+                                width:auto;text-align: left;
+                            }
+                            .select2-container--default {
+                                .select2-selection--single{
+                                    background-color: transparent;border: 0;
+                                    border-bottom: 1px solid #ddd; 
+                                    @include radius(0px); @include shadowarea(none);
+                                    height: 38px;
+                                    line-height: 38px;
+
+                                    .select2-selection__arrow{
+                                        height:38px;width:35px;
+                                        background: transparent url(../images/arrow-bottom.png) no-repeat 50% 50%;
+
+                                        b{
+                                           display:none; 
+                                        }
+                                    }
+                                }
+
+                                .select2-selection__rendered{
+                                    color: $dark-blue;
+                                    line-height: 38px;
+                                }
+                            }
+                            .select2-container--open.select2-container--focus {
+                                .select2-selection__arrow{
+                                    background: transparent url(../images/arrow-top.png) no-repeat 50% 50%;
+                                }
+                            }*/ }
+                            .credit-table { text-align: $text-center;
+                                .download-section { @include space(0, 20px 0);
+                                    a { @include fontstyle($font-size + 16, bold, $dark-blue, capitalize, 0, 0 15px 0 0); }
+                                    .form-control { @include radius(0); border: 0; border-bottom: 1px solid #ddd; @include shadowarea(none) }
+                                    .input-group-btn { .btn { background: #eee; @include fontstyle($font-size + 3, bold, $dark-blue, capitalize, 10px 12px, 0); border: 0; @include radius(0);
+                                            &:hover, &:focus { outline: none; }
+                                        }
+                                    }
+                                }
+                                thead { tr { th { @include fontstyle($font-size + 2, $font-weight + 300, $dark-blue, capitalize, 8px, 0); border-bottom: 1px solid #ddd; line-height: $font-size + 26; text-align: $text-center; }
+                                    }
+                                }
+                                tbody { tr { td { @include fontstyle($font-size + 2, normal, $dark-blue, capitalize, 8px, 0); line-height: $font-size + 26; text-align: $text-center; border-top: 0; border-bottom: 1px solid #ddd; }
+                                        .failed { color: #ff0000; }
+                                        .sucess { color: $green; }
+                                        &:nth-of-type(odd) { td { background: #fafbfb; }
+                                        }
+                                    }
+                                }
+                            }
+                            }
+                        }
+                    }
+                }
+            }
+            .chef-calender{ color: $dark-blue;
+                .fc-header-toolbar { h2 { font-size: $font-size + 6; font-weight: $font-weight + 400; color: $dark-blue;  } }
+                .fc-day-header { padding: 10px 0; }
+                .fc-head {  border-left: none; border-right: none; }
+                .fc-body { background-color: rgba($green, 0.1); } 
+                .fc-event { background-color: #fff5e9; color: #d99832; border: none; border-radius: 0; margin: 0; font-size: $font-size + (-2); }
+                /*.fc-past { border-left: 2px solid #d99832; background-color: #fff5e9;color: #d99832; }*/
+                .fc-content { text-align: center; }
+            }
+        
+        }

@@ -978,114 +978,6 @@ height: 43px;*/
       -ms-border-radius: 10px 0 0 10px;
       -o-border-radius: 10px 0 0 10px;
       border-radius: 10px 0 0 10px; }
-  .signup-chef .steps-wrapper {
-    padding: 45px 0 60px;
-    position: relative; }
-    @media (max-width: 991px) {
-      .signup-chef .steps-wrapper {
-        padding-bottom: 0; } }
-    .signup-chef .steps-wrapper .connecting-line {
-      height: 2px;
-      background: #e0e0e0;
-      position: absolute;
-      width: 80%;
-      margin: 0 auto;
-      left: 0;
-      right: 0;
-      top: 35%;
-      z-index: 0; }
-      @media (max-width: 1200px) {
-        .signup-chef .steps-wrapper .connecting-line {
-          width: 70%;
-          top: 30%; } }
-      @media (max-width: 991px) {
-        .signup-chef .steps-wrapper .connecting-line {
-          top: 40%; } }
-      @media (max-width: 767px) {
-        .signup-chef .steps-wrapper .connecting-line {
-          display: none; } }
-    .signup-chef .steps-wrapper .steps-details .steps-list {
-      width: 19.5%; }
-      @media (max-width: 1200px) {
-        .signup-chef .steps-wrapper .steps-details .steps-list {
-          width: 19%; } }
-      @media (max-width: 767px) {
-        .signup-chef .steps-wrapper .steps-details .steps-list {
-          width: 100%;
-          margin-bottom: 25px; } }
-      .signup-chef .steps-wrapper .steps-details .steps-list .round-steps {
-        width: 60px;
-        height: 60px;
-        background: #fafafa;
-        -moz-border-radius: 50%;
-        -webkit-border-radius: 50%;
-        -ms-border-radius: 50%;
-        -o-border-radius: 50%;
-        border-radius: 50%;
-        padding: 15px;
-        margin: 0 auto;
-        position: relative; }
-        .signup-chef .steps-wrapper .steps-details .steps-list .round-steps span {
-          font-size: 35px;
-          color: #11262e; }
-          @media (max-width: 991px) {
-            .signup-chef .steps-wrapper .steps-details .steps-list .round-steps span {
-              font-size: 22px; } }
-        @media (max-width: 991px) {
-          .signup-chef .steps-wrapper .steps-details .steps-list .round-steps {
-            width: 40px;
-            height: 40px;
-            padding: 10px 12px; } }
-      .signup-chef .steps-wrapper .steps-details .steps-list .steps-title {
-        padding-top: 30px;
-        vertical-align: top;
-        display: inline-block;
-        color: #11262e; }
-        @media (max-width: 767px) {
-          .signup-chef .steps-wrapper .steps-details .steps-list .steps-title {
-            padding-top: 10px; } }
-        .signup-chef .steps-wrapper .steps-details .steps-list .steps-title h5 {
-          font-size: 16px;
-          color: #11262e; }
-          @media (max-width: 991px) {
-            .signup-chef .steps-wrapper .steps-details .steps-list .steps-title h5 {
-              font-size: 12px; } }
-      .signup-chef .steps-wrapper .steps-details .steps-list.active .round-steps {
-        box-shadow: 0 0 40px rgba(255, 127, 0, 0.27);
-        -webkit-box-shadow: 0 0 40px rgba(255, 127, 0, 0.27);
-        -moz-box-shadow: 0 0 40px rgba(255, 127, 0, 0.27); }
-        .signup-chef .steps-wrapper .steps-details .steps-list.active .round-steps span {
-          color: #ff7f00; }
-      .signup-chef .steps-wrapper .steps-details .steps-list.active .steps-title h5 {
-        color: #ff7f00; }
-      .signup-chef .steps-wrapper .steps-details .steps-list.completed .round-steps {
-        background-color: #1e824c;
-        position: relative; }
-        .signup-chef .steps-wrapper .steps-details .steps-list.completed .round-steps span {
-          color: #ffffff; }
-        .signup-chef .steps-wrapper .steps-details .steps-list.completed .round-steps:after {
-          font-family: 'icomoon';
-          content: "\e902";
-          position: absolute;
-          top: 0;
-          right: 0;
-          background: #000;
-          -moz-border-radius: 50%;
-          -webkit-border-radius: 50%;
-          -ms-border-radius: 50%;
-          -o-border-radius: 50%;
-          border-radius: 50%;
-          color: #ffffff;
-          height: 20px;
-          width: 20px; }
-          @media (max-width: 1200px) {
-            .signup-chef .steps-wrapper .steps-details .steps-list.completed .round-steps:after {
-              top: -4px;
-              height: 15px;
-              width: 15px;
-              font-size: 12px; } }
-      .signup-chef .steps-wrapper .steps-details .steps-list.completed .steps-title h5 {
-        color: #1e824c; }
   .signup-chef .cancellation-policy {
     font-size: 16px;
     text-decoration: underline;
@@ -2351,6 +2243,134 @@ footer {
     .accordion-tab-section .tab-content .tab-pane {
       display: block; } }
 
+/*steps*/
+.steps-block .steps-wrapper, .signup-chef .steps-wrapper, .checkout_sec .steps-wrapper {
+  padding: 45px 0 60px;
+  position: relative; }
+  @media (max-width: 991px) {
+    .steps-block .steps-wrapper, .signup-chef .steps-wrapper, .checkout_sec .steps-wrapper {
+      padding-bottom: 0; } }
+  .steps-block .steps-wrapper .connecting-line, .signup-chef .steps-wrapper .connecting-line, .checkout_sec .steps-wrapper .connecting-line {
+    height: 2px;
+    background: #e0e0e0;
+    position: absolute;
+    width: 80%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 35%;
+    z-index: 0; }
+    @media (max-width: 1200px) {
+      .steps-block .steps-wrapper .connecting-line, .signup-chef .steps-wrapper .connecting-line, .checkout_sec .steps-wrapper .connecting-line {
+        width: 70%;
+        top: 30%; } }
+    @media (max-width: 991px) {
+      .steps-block .steps-wrapper .connecting-line, .signup-chef .steps-wrapper .connecting-line, .checkout_sec .steps-wrapper .connecting-line {
+        top: 40%; } }
+    @media (max-width: 767px) {
+      .steps-block .steps-wrapper .connecting-line, .signup-chef .steps-wrapper .connecting-line, .checkout_sec .steps-wrapper .connecting-line {
+        display: none; } }
+  .steps-block .steps-wrapper .steps-details .steps-list, .signup-chef .steps-wrapper .steps-details .steps-list, .checkout_sec .steps-wrapper .steps-details .steps-list {
+    width: 19.5%;
+    position: relative; }
+    @media (max-width: 1200px) {
+      .steps-block .steps-wrapper .steps-details .steps-list, .signup-chef .steps-wrapper .steps-details .steps-list, .checkout_sec .steps-wrapper .steps-details .steps-list {
+        width: 19%; } }
+    @media (max-width: 767px) {
+      .steps-block .steps-wrapper .steps-details .steps-list, .signup-chef .steps-wrapper .steps-details .steps-list, .checkout_sec .steps-wrapper .steps-details .steps-list {
+        width: 100%;
+        margin-bottom: 25px; } }
+    .steps-block .steps-wrapper .steps-details .steps-list:not(:last-child) a:after, .signup-chef .steps-wrapper .steps-details .steps-list:not(:last-child) a:after, .checkout_sec .steps-wrapper .steps-details .steps-list:not(:last-child) a:after {
+      content: "";
+      width: 70%;
+      height: 2px;
+      background-color: #e0e0e0;
+      position: absolute;
+      right: -40%;
+      top: 25%; }
+      @media (max-width: 767px) {
+        .steps-block .steps-wrapper .steps-details .steps-list:not(:last-child) a:after, .signup-chef .steps-wrapper .steps-details .steps-list:not(:last-child) a:after, .checkout_sec .steps-wrapper .steps-details .steps-list:not(:last-child) a:after {
+          display: none; } }
+    .steps-block .steps-wrapper .steps-details .steps-list .round-steps, .signup-chef .steps-wrapper .steps-details .steps-list .round-steps, .checkout_sec .steps-wrapper .steps-details .steps-list .round-steps {
+      width: 60px;
+      height: 60px;
+      background: #fafafa;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      border-radius: 50%;
+      padding: 15px;
+      margin: 0 auto;
+      position: relative; }
+      .steps-block .steps-wrapper .steps-details .steps-list .round-steps span, .signup-chef .steps-wrapper .steps-details .steps-list .round-steps span, .checkout_sec .steps-wrapper .steps-details .steps-list .round-steps span {
+        font-size: 35px;
+        color: #11262e; }
+        @media (max-width: 991px) {
+          .steps-block .steps-wrapper .steps-details .steps-list .round-steps span, .signup-chef .steps-wrapper .steps-details .steps-list .round-steps span, .checkout_sec .steps-wrapper .steps-details .steps-list .round-steps span {
+            font-size: 22px; } }
+      @media (max-width: 991px) {
+        .steps-block .steps-wrapper .steps-details .steps-list .round-steps, .signup-chef .steps-wrapper .steps-details .steps-list .round-steps, .checkout_sec .steps-wrapper .steps-details .steps-list .round-steps {
+          width: 40px;
+          height: 40px;
+          padding: 10px 12px; } }
+    .steps-block .steps-wrapper .steps-details .steps-list .steps-title, .signup-chef .steps-wrapper .steps-details .steps-list .steps-title, .checkout_sec .steps-wrapper .steps-details .steps-list .steps-title {
+      padding-top: 30px;
+      vertical-align: top;
+      display: inline-block;
+      color: #11262e; }
+      @media (max-width: 767px) {
+        .steps-block .steps-wrapper .steps-details .steps-list .steps-title, .signup-chef .steps-wrapper .steps-details .steps-list .steps-title, .checkout_sec .steps-wrapper .steps-details .steps-list .steps-title {
+          padding-top: 10px; } }
+      .steps-block .steps-wrapper .steps-details .steps-list .steps-title h5, .signup-chef .steps-wrapper .steps-details .steps-list .steps-title h5, .checkout_sec .steps-wrapper .steps-details .steps-list .steps-title h5 {
+        font-size: 16px;
+        color: #11262e; }
+        @media (max-width: 991px) {
+          .steps-block .steps-wrapper .steps-details .steps-list .steps-title h5, .signup-chef .steps-wrapper .steps-details .steps-list .steps-title h5, .checkout_sec .steps-wrapper .steps-details .steps-list .steps-title h5 {
+            font-size: 12px; } }
+    .steps-block .steps-wrapper .steps-details .steps-list.active .round-steps, .signup-chef .steps-wrapper .steps-details .steps-list.active .round-steps, .checkout_sec .steps-wrapper .steps-details .steps-list.active .round-steps {
+      box-shadow: 0 0 40px rgba(255, 127, 0, 0.27);
+      -webkit-box-shadow: 0 0 40px rgba(255, 127, 0, 0.27);
+      -moz-box-shadow: 0 0 40px rgba(255, 127, 0, 0.27); }
+      .steps-block .steps-wrapper .steps-details .steps-list.active .round-steps span, .signup-chef .steps-wrapper .steps-details .steps-list.active .round-steps span, .checkout_sec .steps-wrapper .steps-details .steps-list.active .round-steps span {
+        color: #ff7f00; }
+    .steps-block .steps-wrapper .steps-details .steps-list.active .steps-title h5, .signup-chef .steps-wrapper .steps-details .steps-list.active .steps-title h5, .checkout_sec .steps-wrapper .steps-details .steps-list.active .steps-title h5 {
+      color: #ff7f00; }
+    .steps-block .steps-wrapper .steps-details .steps-list.completed:not(:last-child) a:after, .signup-chef .steps-wrapper .steps-details .steps-list.completed:not(:last-child) a:after, .checkout_sec .steps-wrapper .steps-details .steps-list.completed:not(:last-child) a:after {
+      background-color: #1e824c; }
+      @media (max-width: 767px) {
+        .steps-block .steps-wrapper .steps-details .steps-list.completed:not(:last-child) a:after, .signup-chef .steps-wrapper .steps-details .steps-list.completed:not(:last-child) a:after, .checkout_sec .steps-wrapper .steps-details .steps-list.completed:not(:last-child) a:after {
+          display: none; } }
+    .steps-block .steps-wrapper .steps-details .steps-list.completed .round-steps, .signup-chef .steps-wrapper .steps-details .steps-list.completed .round-steps, .checkout_sec .steps-wrapper .steps-details .steps-list.completed .round-steps {
+      background-color: #1e824c;
+      position: relative; }
+      .steps-block .steps-wrapper .steps-details .steps-list.completed .round-steps span, .signup-chef .steps-wrapper .steps-details .steps-list.completed .round-steps span, .checkout_sec .steps-wrapper .steps-details .steps-list.completed .round-steps span {
+        color: #ffffff; }
+      .steps-block .steps-wrapper .steps-details .steps-list.completed .round-steps:after, .signup-chef .steps-wrapper .steps-details .steps-list.completed .round-steps:after, .checkout_sec .steps-wrapper .steps-details .steps-list.completed .round-steps:after {
+        font-family: 'icomoon';
+        content: "\e902";
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: #000;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        border-radius: 50%;
+        color: #ffffff;
+        height: 20px;
+        width: 20px; }
+        @media (max-width: 1200px) {
+          .steps-block .steps-wrapper .steps-details .steps-list.completed .round-steps:after, .signup-chef .steps-wrapper .steps-details .steps-list.completed .round-steps:after, .checkout_sec .steps-wrapper .steps-details .steps-list.completed .round-steps:after {
+            top: -4px;
+            height: 15px;
+            width: 15px;
+            font-size: 12px; } }
+    .steps-block .steps-wrapper .steps-details .steps-list.completed .steps-title h5, .signup-chef .steps-wrapper .steps-details .steps-list.completed .steps-title h5, .checkout_sec .steps-wrapper .steps-details .steps-list.completed .steps-title h5 {
+      color: #1e824c; }
+
+/*#steps*/
 .btn {
   text-transform: uppercase; }
 
@@ -3701,129 +3721,31 @@ footer {
       .checkout_sec h2 {
         width: 100%;
         text-align: center; } }
-  .checkout_sec .steps-wrapper {
-    padding: 45px 0 60px;
-    position: relative; }
-    @media (max-width: 991px) {
-      .checkout_sec .steps-wrapper {
-        padding-bottom: 20px; } }
-    .checkout_sec .steps-wrapper .connecting-line {
-      height: 2px;
-      background: #e0e0e0;
-      position: absolute;
-      width: 80%;
-      margin: 0 auto;
-      left: 0;
-      right: 0;
-      top: 35%;
-      z-index: 0; }
-      @media (max-width: 1200px) {
-        .checkout_sec .steps-wrapper .connecting-line {
-          width: 70%;
-          top: 30%; } }
-      @media (max-width: 991px) {
-        .checkout_sec .steps-wrapper .connecting-line {
-          top: 40%; } }
-      @media (max-width: 767px) {
-        .checkout_sec .steps-wrapper .connecting-line {
-          display: none; } }
-    .checkout_sec .steps-wrapper .steps-details .steps-list {
-      width: 24.5%; }
-      @media (max-width: 1200px) {
-        .checkout_sec .steps-wrapper .steps-details .steps-list {
-          width: 19%; } }
-      @media (max-width: 767px) {
-        .checkout_sec .steps-wrapper .steps-details .steps-list {
-          width: 100%;
-          margin-bottom: 25px; } }
-      .checkout_sec .steps-wrapper .steps-details .steps-list .round-steps {
-        width: 90px;
-        height: 90px;
-        background: #fafafa;
-        -moz-border-radius: 50%;
-        -webkit-border-radius: 50%;
-        -ms-border-radius: 50%;
-        -o-border-radius: 50%;
-        border-radius: 50%;
-        padding: 15px;
-        margin: 0 auto;
-        position: relative; }
-        .checkout_sec .steps-wrapper .steps-details .steps-list .round-steps span {
-          font-size: 50px;
-          color: #11262e; }
-          @media (max-width: 991px) {
-            .checkout_sec .steps-wrapper .steps-details .steps-list .round-steps span {
-              font-size: 35px; } }
-        @media (max-width: 991px) {
-          .checkout_sec .steps-wrapper .steps-details .steps-list .round-steps {
-            width: 60px;
-            height: 60px;
-            padding: 10px 12px; } }
-      .checkout_sec .steps-wrapper .steps-details .steps-list .steps-title {
-        padding-top: 30px;
-        vertical-align: top;
-        display: inline-block;
-        color: #11262e; }
-        @media (max-width: 767px) {
-          .checkout_sec .steps-wrapper .steps-details .steps-list .steps-title {
-            padding-top: 10px; } }
-        .checkout_sec .steps-wrapper .steps-details .steps-list .steps-title h5 {
-          font-size: 17px;
-          font-weight: bold;
-          text-transform: uppercase;
-          color: #11262e; }
-          @media (max-width: 991px) {
-            .checkout_sec .steps-wrapper .steps-details .steps-list .steps-title h5 {
-              font-size: 12px; } }
-      .checkout_sec .steps-wrapper .steps-details .steps-list.active .round-steps {
-        box-shadow: 0 0 40px rgba(255, 127, 0, 0.27);
-        -webkit-box-shadow: 0 0 40px rgba(255, 127, 0, 0.27);
-        -moz-box-shadow: 0 0 40px rgba(255, 127, 0, 0.27); }
-        .checkout_sec .steps-wrapper .steps-details .steps-list.active .round-steps span {
-          color: #ff7f00; }
-      .checkout_sec .steps-wrapper .steps-details .steps-list.active .steps-title h5 {
-        color: #ff7f00;
-        position: relative; }
-      .checkout_sec .steps-wrapper .steps-details .steps-list.active .steps-title h5:before {
-        content: '';
-        background: url("../images/orange_traingle.png");
-        width: 16px;
-        height: 13px;
-        display: block;
-        position: absolute;
-        top: 25px;
-        left: 0;
-        right: 0;
-        margin: 0 auto; }
-      .checkout_sec .steps-wrapper .steps-details .steps-list.completed .round-steps {
-        background-color: #1e824c;
-        position: relative; }
-        .checkout_sec .steps-wrapper .steps-details .steps-list.completed .round-steps span {
-          color: #ffffff; }
-        .checkout_sec .steps-wrapper .steps-details .steps-list.completed .round-steps:after {
-          font-family: 'icomoon';
-          content: "\e902";
-          position: absolute;
-          top: 0;
-          right: 0;
-          background: #000;
-          -moz-border-radius: 50%;
-          -webkit-border-radius: 50%;
-          -ms-border-radius: 50%;
-          -o-border-radius: 50%;
-          border-radius: 50%;
-          color: #ffffff;
-          height: 30px;
-          width: 30px;
-          font-size: 21px; }
-          @media (max-width: 1200px) {
-            .checkout_sec .steps-wrapper .steps-details .steps-list.completed .round-steps:after {
-              top: -4px;
-              height: 20px;
-              width: 20px;
-              font-size: 14px; } }
-      .checkout_sec .steps-wrapper .steps-details .steps-list.completed .steps-title h5 {
-        color: #1e824c; }
+  .checkout_sec .steps-wrapper .connecting-line {
+    width: 55%; }
+  .checkout_sec .steps-wrapper .steps-details .steps-list:not(:last-child) a:after {
+    width: 76%;
+    top: 30%; }
+  .checkout_sec .steps-wrapper .steps-details .steps-list.active .steps-title:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 11px 7.5px 0 7.5px;
+    border-color: #ff7f00 transparent transparent transparent;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto; }
+  .checkout_sec .steps-wrapper .steps-details .steps-list .steps-title h5 {
+    font-weight: 700;
+    text-transform: uppercase; }
+  .checkout_sec .steps-wrapper .steps-details .steps-list .round-steps {
+    width: 70px;
+    height: 70px; }
+    .checkout_sec .steps-wrapper .steps-details .steps-list .round-steps span {
+      font-size: 38px; }
   .checkout_sec .checkout_cont {
     padding: 50px;
     border: 1px solid #e6e6e6;
